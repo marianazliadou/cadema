@@ -1,0 +1,7 @@
+[virtualenv]
+requirements = ['requirements.txt']
+
+[server]
+port = $PORT
+enableCORS = false
+
