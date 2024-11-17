@@ -13,7 +13,7 @@ with col1:
 with col2:
     tei_url = "images/tei.jpg"
     st.image(tei_url, use_column_width=True)
-st.markdown("<p style='text-align: center;'>Μαρία Ναζίάδου</p>",
+st.markdown("<p style='text-align: center;'>Μαρία Ναζλιάδου</p>",
             unsafe_allow_html=True)
 st.markdown("<p style='text-align: center;'>Νοέμβριος 2024</p>",
             unsafe_allow_html=True)
