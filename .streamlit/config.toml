@@ -2,6 +2,6 @@
 requirements = ['requirements.txt']
 
 [server]
-port = $PORT
+port = "PORT"
 enableCORS = false
 
