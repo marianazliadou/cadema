@@ -9,10 +9,10 @@ st.set_page_config(
 col1, col2 = st.columns(2)
 with col1:
     dipae_url = "images/dipae.jpg"
-    st.image(dipae_url, use_column_width=True)
+    st.image(dipae_url, width=500)
 with col2:
     tei_url = "images/tei.jpg"
-    st.image(tei_url, width=200)
+    st.image(tei_url, width=500)
 st.markdown("<p style='text-align: center;'>Μαρία Ναζλιάδου</p>",
             unsafe_allow_html=True)
 st.markdown("<p style='text-align: center;'>Νοέμβριος 2024</p>",
