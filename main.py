@@ -19,10 +19,6 @@ st.markdown("<p style='text-align: center;'>Νοέμβριος 2024</p>",
             unsafe_allow_html=True)
 st.divider()
 
-st.markdown("## Check ότι μπορώ να γράφω κι εγώ")
-st.markdown("Βρε συ! Αυτά που γράφεις κάτω ως *markdown* δεν είναι *markdown*....και οι Μαριάννες έτσι τα είχαν :)")
-
-
 st.write("")
 st.markdown("""<h2 style='color: #2F4F4F; font-size: 50px; text-align: center;'><u>ΙΚΑΝΟΤΙΚΟΣ ΣΧΕΔΙΑΣΜΟΣ</u></h2>""", unsafe_allow_html=True)
 
