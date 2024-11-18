@@ -12,7 +12,7 @@ with col1:
     st.image(dipae_url, use_column_width=True)
 with col2:
     tei_url = "images/tei.jpg"
-    st.image(tei_url, use_column_width=True)
+    st.image(tei_url, use_column_width=200)
 st.markdown("<p style='text-align: center;'>Μαρία Ναζλιάδου</p>",
             unsafe_allow_html=True)
 st.markdown("<p style='text-align: center;'>Νοέμβριος 2024</p>",
