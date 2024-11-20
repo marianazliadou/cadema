@@ -41,18 +41,18 @@ if epilogi == "Ικανοτικός σχεδιασμός σε διάτμηση":
                 lb = st.number_input('Μήκος δοκού $l_b$:', value=5.5, step=0.1, format="%.2f")
             with col2:
                 st.info('**Τέμνουσες:**')
-                V0b = st.number_input('Τέμνουσα της δοκού $V_{0,_b}$:', value=60.0, step=0.1, format="%.2f")
+                V0b = st.number_input('Τέμνουσα της δοκού $V_{0,b}$:', value=60.0, step=0.1, format="%.2f")
             st.divider()
             st.info("**Ροπές αντοχής:**")
             col1,col2 =st.columns(2)
             with col1:
                 st.success('**Αριστερά:**')
-                MRb1_t = st.number_input('**Θετική** ροπή αντοχής $MRb,1^+$:', value=50.0, step=0.1, format="%.2f")
-                MRb1_a = st.number_input('**Αρνητική** ροπή αντοχής $MRb,1^-$:',value = - 100.0, step=0.1, format="%.2f")
+                MRb1_t = st.number_input('**Θετική** ροπή αντοχής $M_{Rb,1}^+$:', value=50.0, step=0.1, format="%.2f")
+                MRb1_a = st.number_input('**Αρνητική** ροπή αντοχής $M_{Rb,1}^-$:',value = - 100.0, step=0.1, format="%.2f")
             with col2:
                 st.success('**Δεξιά:**')
-                MRb2_t = st.number_input('Για **θετική διεύθυνση** $MRb,2^+$:', value= 80.0, step=0.1, format="%.2f")
-                MRb2_a = st.number_input('Για **αρνητική διεύθυνση** $MRb,2^-$:',value = -120.0, step=0.1, format="%.2f")
+                MRb2_t = st.number_input('Για **θετική διεύθυνση** $M_{Rb,2}^+$:', value= 80.0, step=0.1, format="%.2f")
+                MRb2_a = st.number_input('Για **αρνητική διεύθυνση** $M_{Rb,2}^-$:',value = -120.0, step=0.1, format="%.2f")
 
         st.divider()
         fora = st.selectbox("Επιλέξτε σεισμική φορά ανάλυσης:", ("Θετική →", "Αρνητική ←"))
@@ -74,7 +74,7 @@ if epilogi == "Ικανοτικός σχεδιασμός σε διάτμηση":
                     
                     **όπου:**
                     
-                    ◹ $$\Delta \text{V}_{\text{CD,b}} = 1.20 \left(\frac{\text{M}_{\text{Rb,}_{1}} + \text{M}_{\text{Rb,}_{2}}}{\text{l}_{\text{b}}} \right)$$''')
+                    ◹ $$\Delta \text{V}_{\text{CD,b}} = 1.20 \left(\frac{\text{M}_{\text{Rb,1}} + \text{M}_{\text{Rb,2}}}{\text{l}_{\text{b}}} \right)$$''')
         st.write("")
 
         if fora == 'Θετική →':
@@ -82,10 +82,10 @@ if epilogi == "Ικανοτικός σχεδιασμός σε διάτμηση":
             col1,col2 =st.columns(2)
             with col1:
                 st.markdown(rf'''
-                ◹ $$\text{{M}}_{{\text{{Rb,}}_{{1}}}}^+ = {MRb1_t}\, \text{{kNm}}$$''')
+                ◹ $$\text{{M}}_{{\text{{Rb,1}}}}^+ = {MRb1_t}\, \text{{kNm}}$$''')
             with col2:
                 st.markdown(rf'''    
-                ◹ $$\text{{M}}_{{\text{{Rb,}}_{{2}}}}^- = {MRb2_a}\, \text{{kNm}}$$''')
+                ◹ $$\text{{M}}_{{\text{{Rb,2}}}}^- = {MRb2_a}\, \text{{kNm}}$$''')
      
             ΔVCD_b = ΔV_CD(MRb1_t, abs(MRb2_a), lb)
             ΔVCD_b = round(ΔVCD_b, 2)
@@ -93,7 +93,7 @@ if epilogi == "Ικανοτικός σχεδιασμός σε διάτμηση":
             st.markdown(rf''' 
                  **Άρα:**
                  
-                 $$\Delta \text{{V}}_{{\text{{CD,b}}}} = 1.20 \left(\frac{{\text{{M}}_{{\text{{Rb,}}_{{1}}}}^+ + |\text{{M}}_{{\text{{Rb,}}_{{2}}}}^-|}}{{\text{{l}}_{{\text{{b}}}}}} \right) = {ΔVCD_b}\, \text{{kN}}$$''')
+                 $$\Delta \text{{V}}_{{\text{{CD,b}}}} = 1.20 \left(\frac{{\text{{M}}_{{\text{{Rb,1}}}}^+ + |\text{{M}}_{{\text{{Rb,2}}}}^-|}}{{\text{{l}}_{{\text{{b}}}}}} \right) = {ΔVCD_b}\, \text{{kN}}$$''')
             VCD_b = Vb(V0b, ΔVCD_b)
             VCD_b = round(VCD_b, 2)
             st.write("")
@@ -108,17 +108,17 @@ if epilogi == "Ικανοτικός σχεδιασμός σε διάτμηση":
             col1,col2 = st.columns(2)
             with col1: 
                 st.markdown(rf'''
-                ◹ $$\text{{M}}_{{\text{{Rb,}}_{{1}}}}^- = {MRb1_a}\, \text{{kNm}}$$''')
+                ◹ $$\text{{M}}_{{\text{{Rb,1}}}}^- = {MRb1_a}\, \text{{kNm}}$$''')
             with col2:
                 st.markdown(rf'''
-                ◹ $$\text{{M}}_{{\text{{Rb,}}_{{2}}}}^+ = {MRb2_t}\, \text{{kNm}}$$''')
+                ◹ $$\text{{M}}_{{\text{{Rb,2}}}}^+ = {MRb2_t}\, \text{{kNm}}$$''')
             ΔVCD_b = ΔV_CD(abs(MRb1_a), MRb2_t, lb)
             ΔVCD_b = round(ΔVCD_b, 2)
             st.write("")
             st.markdown(rf''' 
                  **Άρα:**
                  
-                 $$\Delta \text{{V}}_{{\text{{CD,b}}}} = 1.20 \left(\frac{{|\text{{M}}_{{\text{{Rb,}}_{{1}}}}^-| + \text{{M}}_{{\text{{Rb,}}_{{2}}}}^+}}{{\text{{l}}_{{\text{{b}}}}}} \right) = {ΔVCD_b}\, \text{{kN}}$$''') 
+                 $$\Delta \text{{V}}_{{\text{{CD,b}}}} = 1.20 \left(\frac{{|\text{{M}}_{{\text{{Rb,1}}}}^-| + \text{{M}}_{{\text{{Rb,2}}}}^+}}{{\text{{l}}_{{\text{{b}}}}}} \right) = {ΔVCD_b}\, \text{{kN}}$$''') 
             VCD_b = Vb(V0b, ΔVCD_b)
             VCD_b= round(VCD_b, 2)
             st.success("**Οπότε** η τέμνουσα σχεδιασμού για **αρνητική** σεισμική φορά θα είναι:")
