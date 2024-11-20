@@ -1366,10 +1366,10 @@ if epilogi == "Ικανοτικός σχεδιασμός στους κόμβου
         with st.expander("**Τα αριθμητικά δεδομένα σας**"):
             st.info("**Ροπές άνω υποστυλώματος:**")
             MRc1_n = st.number_input(
-            "**Αρνητική** ροπή αντοχής $MRc,1^-$:", value=-350.0, step = 0.1, format="%.2f"
+            "**Αρνητική** ροπή αντοχής $M_{Rc,1}^-$:", value=-350.0, step = 0.1, format="%.2f"
             )
             MRc1_p = st.number_input(
-            "**Θετική** ροπής αντοχής $MRc,1^+$:", value=500.0, step = 0.1, format="%.2f"
+            "**Θετική** ροπής αντοχής $M_{Rc,1}^+$:", value=500.0, step = 0.1, format="%.2f"
             )
 
             st.divider()
@@ -1617,10 +1617,10 @@ if epilogi == "Ικανοτικός σχεδιασμός στους κόμβου
             if an_up:
                 st.info("**Ροπές υποστυλώματος:**")
                 MRc1_n = st.number_input(
-                    "**Αρνητική** ροπή αντοχής $MRc,1^-$", value=-200.0, step = 0.1, format="%.2f"
+                    "**Αρνητική** ροπή αντοχής $M_{Rc,1}^-$", value=-200.0, step = 0.1, format="%.2f"
                 )
                 MRc1_p = st.number_input(
-                    "**Θετική** ροπή αντοχής $MRc,1^+$", value=120.0, step = 0.1, format="%.2f"
+                    "**Θετική** ροπή αντοχής $M_{Rc,1}^+$", value=120.0, step = 0.1, format="%.2f"
                 )
         
             col1, col2= st.columns(2)
@@ -1629,29 +1629,29 @@ if epilogi == "Ικανοτικός σχεδιασμός στους κόμβου
                 if ar_dok:
                      st.info("**Ροπές δοκού:**")
                      MRb1_n = st.number_input(
-                    "**Αρνητική** ροπή αντοχής $MRb,1^-$:", value=-100.0, step = 0.1, format="%.2f"
+                    "**Αρνητική** ροπή αντοχής $M_{Rb,1}^-$:", value=-100.0, step = 0.1, format="%.2f"
                 )
                      MRb1_p = st.number_input(
-                    "**Θετική** ροπή αντοχής $MRb,1^+$:", value=50.0, step = 0.1, format="%.2f"
+                    "**Θετική** ροπή αντοχής $M_{Rb,1}^+$:", value=50.0, step = 0.1, format="%.2f"
                 )
             with col2:
                 de_dok = st.checkbox("**Δεξιά δοκός**")
                 if de_dok:
                     st.info("**Ροπές δοκού:**")
                     MRb2_n = st.number_input(
-                    "**Αρνητική** ροπή αντοχής $MRb,2^-$:", value=-400.0, step = 0.1, format="%.2f"
+                    "**Αρνητική** ροπή αντοχής $M_{Rb,2}^-$:", value=-400.0, step = 0.1, format="%.2f"
                 )
                     MRb2_p = st.number_input(
-                    "**Θετική** ροπή αντοχής $MRb,2^+$:", value=200.0, step = 0.1, format="%.2f"
+                    "**Θετική** ροπή αντοχής $M_{Rb,2}^+$:", value=200.0, step = 0.1, format="%.2f"
                 )
             kat_up = st.checkbox("**Κάτω υποστύλωμα**")
             if kat_up:
                    st.info("**Ροπές υποστυλώματος:**")
                    MRc2_n = st.number_input(
-                "**Αρνητική** ροπή αντοχής $MRc,2^-$", value=-50.0, step = 0.1, format="%.2f"
+                "**Αρνητική** ροπή αντοχής $M_{Rc,2}^-$", value=-50.0, step = 0.1, format="%.2f"
                 )
                    MRc2_p = st.number_input(
-                "**Θετική** ροπή αντοχής $MRc,2^+$", value=100.0, step = 0.1, format="%.2f"
+                "**Θετική** ροπή αντοχής $M_{Rc,2}^+$", value=100.0, step = 0.1, format="%.2f"
                 )
                             
         st.divider()
