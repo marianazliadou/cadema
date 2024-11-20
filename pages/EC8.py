@@ -1309,7 +1309,7 @@ if epilogi == "Ικανοτικός σχεδιασμός στους κόμβου
             )
              else:
                  st.markdown(
-                rf""" **Άρα:** $$\sum \text{{M}}_{{\text{{Rc}}}} < 1.3 \times \sum \text{{M}}_{{\text{{Rb}}}}  → {SMRc:.2f}\, \text{{kNm}} < {1.3*SMRb:.2f}\, \text{{kNmn}}$$"""
+                rf""" **Άρα:** $$\sum \text{{M}}_{{\text{{Rc}}}} < 1.3 \cdot \sum \text{{M}}_{{\text{{Rb}}}}  → {SMRc:.2f}\, \text{{kNm}} < {1.3*SMRb:.2f}\, \text{{kNmn}}$$"""
             )
                  st.error(
                 "Η ανισότητα **δεν ικανοποιείται**.",
@@ -1336,7 +1336,7 @@ if epilogi == "Ικανοτικός σχεδιασμός στους κόμβου
             )
              else:
                  st.markdown(
-                rf""" **Άρα:** $$\sum \text{{M}}_{{\text{{Rc}}}} < 1.3 \times \sum \text{{M}}_{{\text{{Rb}}}}  → {SMRc:.2f}\, \text{{kNm}} < {1.3*SMRb:.2f}\, \text{{kNm}}$$"""
+                rf""" **Άρα:** $$\sum \text{{M}}_{{\text{{Rc}}}} < 1.3 \cdot \sum \text{{M}}_{{\text{{Rb}}}}  → {SMRc:.2f}\, \text{{kNm}} < {1.3*SMRb:.2f}\, \text{{kNm}}$$"""
             )
                  st.error(
                 "Η ανισότητα **δεν ικανοποιείται**.",
