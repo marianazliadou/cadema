@@ -1302,7 +1302,7 @@ if epilogi == "Ικανοτικός σχεδιασμός στους κόμβου
              st.write("")
              if SMRc >= 1.3 * SMRb:
                  st.markdown(
-                rf""" **Άρα:** $$\sum \text{{M}}_{{\text{{Rc}}}} \geq 1.3 \sum \text{{M}}_{{\text{{Rb}}}} → {SMRc:.2f}\, \text{{kNm}} \geq {1.3*SMRb:.2f}\, \text{{kNm}}$$"""
+                rf""" **Άρα:** $$\sum \text{{M}}_{{\text{{Rc}}}} \geq 1.3 \cdot \sum \text{{M}}_{{\text{{Rb}}}} → {SMRc:.2f}\, \text{{kNm}} \geq {1.3*SMRb:.2f}\, \text{{kNm}}$$"""
             )
                  st.success(
                 "Η ανισότητα **ικανοποιείται**!", icon="🥳"
@@ -1329,7 +1329,7 @@ if epilogi == "Ικανοτικός σχεδιασμός στους κόμβου
              st.write("")
              if SMRc >= 1.3 * SMRb:
                  st.markdown(
-                rf""" **Άρα:** $$\sum \text{{M}}_{{\text{{Rc}}}} \geq 1.3 \sum \text{{M}}_{{\text{{Rb}}}}  → {SMRc:.2f}\, \text{{kNm}} \geq {1.3*SMRb:.2f}\, \text{{kNm}}$$"""
+                rf""" **Άρα:** $$\sum \text{{M}}_{{\text{{Rc}}}} \geq 1.3 \cdot \sum \text{{M}}_{{\text{{Rb}}}}  → {SMRc:.2f}\, \text{{kNm}} \geq {1.3*SMRb:.2f}\, \text{{kNm}}$$"""
             )
                  st.success(
                 "Η ανισότητα **ικανοποιείται**!", icon="🥳"
@@ -1379,29 +1379,29 @@ if epilogi == "Ικανοτικός σχεδιασμός στους κόμβου
                   if ar_d:
                     st.info("**Ροπές δοκού:**")
                     MRb1_n = st.number_input(
-                    "**Αρνητική** ροπή αντοχής $MRb,1^-$:", value=-100.0, step = 0.1, format="%.2f"
+                    "**Αρνητική** ροπή αντοχής $M_{Rb,1}^-$:", value=-100.0, step = 0.1, format="%.2f"
                 )
                     MRb1_p = st.number_input(
-                    "**Θετική** ροπή αντοχής $MRb,1^+$:", value=200.0, step = 0.1, format="%.2f"
+                    "**Θετική** ροπή αντοχής $M_{Rb,1}^+$:", value=200.0, step = 0.1, format="%.2f"
                 )
             with col2:
                   de_d = st.checkbox("**Δεξιά δοκός**")
                   if de_d:
                       st.info("**Ροπές δοκού**")
                       MRb2_n = st.number_input(
-                    "**Αρνητική** ροπή αντοχής $MRb,2^-$:", value=-400.0, step = 0.1, format="%.2f"
+                    "**Αρνητική** ροπή αντοχής $M_{Rb,2}^-$:", value=-400.0, step = 0.1, format="%.2f"
                 )
                       MRb2_p = st.number_input(
-                    "**Θετική** ροπή αντοχής $MRb,2^+$:", value=600.0, step = 0.1, format="%.2f"
+                    "**Θετική** ροπή αντοχής $M_{Rb,2}^+$:", value=600.0, step = 0.1, format="%.2f"
                 )
 
             st.divider()
             st.info("**Ροπές κάτω υποστυλώματος:**")
             MRc2_n = st.number_input(
-            "**Αρνητική** ροπή αντχοής $MRc,2^-$:", value=-400.0, step = 0.1, format="%.2f"
+            "**Αρνητική** ροπή αντχοής $M_{Rc,2}^-$:", value=-400.0, step = 0.1, format="%.2f"
             )
             MRc2_p = st.number_input(
-            "**Θετική** ροπή αντχοής $MRc,2^+$:", value=200.0, step = 0.1, format="%.2f"
+            "**Θετική** ροπή αντχοής $M_{Rc,2}^+$:", value=200.0, step = 0.1, format="%.2f"
             )
             
         st.divider()
@@ -1457,13 +1457,13 @@ if epilogi == "Ικανοτικός σχεδιασμός στους κόμβου
                 st.markdown(rf"""
         **▧ Θετική** φόρτιση:
         
-        $$\text{{M}}_{{\text{{Rc,}}_{{1}}}}^+ = {MRc1_p:.2f}\, \text{{kNm}}$$""")
+        $$\text{{M}}_{{\text{{Rc,1}}}}^+ = {MRc1_p:.2f}\, \text{{kNm}}$$""")
             with col2:
                 st.info("**Κάτω:**")
                 st.markdown(rf"""
         **▧ Θετική** φόρτιση:
         
-        $$\text{{M}}_{{\text{{Rc,}}_{{2}}}}^- = {MRc2_n:.2f}\, \text{{kNm}}$$""")
+        $$\text{{M}}_{{\text{{Rc,2}}}}^- = {MRc2_n:.2f}\, \text{{kNm}}$$""")
         else:
             col1,col2 = st.columns(2)
             with col1:
@@ -1471,13 +1471,13 @@ if epilogi == "Ικανοτικός σχεδιασμός στους κόμβου
                 st.markdown(rf"""
         **▧ Αρνητική** φόρτιση:
 
-        $$\text{{M}}_{{\text{{Rc,}}_{{1}}}}^- = {MRc1_n:.2f}\, \text{{kNm}}$$""")
+        $$\text{{M}}_{{\text{{Rc,1}}}}^- = {MRc1_n:.2f}\, \text{{kNm}}$$""")
             with col2:
                 st.info("**Κάτω:**")
                 st.markdown(rf"""
         **▧ Αρνητική** φόρτιση:
 
-        $$\text{{M}}_{{\text{{Rc,}}_{{2}}}}^+ = {MRc2_p:.2f}\, \text{{kNm}}$$""")
+        $$\text{{M}}_{{\text{{Rc,2}}}}^+ = {MRc2_p:.2f}\, \text{{kNm}}$$""")
                 
         
         st.divider()
@@ -1491,20 +1491,20 @@ if epilogi == "Ικανοτικός σχεδιασμός στους κόμβου
             SMRc = SMRc_eks_th(MRc1_p, MRc2_n)
             SMRb = MRb2_p
             st.markdown(
-                rf""" **⇒** $$\sum \text{{M}}_{{\text{{Rc}}}} = \text{{M}}_{{\text{{Rc,}}_{{1}}}}^+ + \text{{M}}_{{\text{{Rc,}}_{{2}}}}^- = {SMRc:.2f}\, \text{{kNm}}$$"""
+                rf""" **⇒** $$\sum \text{{M}}_{{\text{{Rc}}}} = \text{{M}}_{{\text{{Rc,1}}}}^+ + \text{{M}}_{{\text{{Rc,2}}}}^- = {SMRc:.2f}\, \text{{kNm}}$$"""
             )
             st.markdown(
             rf""" **⇒** $$\sum \text{{M}}_{{\text{{Rb}}}} = \text{{M}}_{{\text{{Rb}}}}^+ = {SMRb:.2f}\, \text{{kNm}}$$""")
             if SMRc >= 1.3 * SMRb:
                 st.markdown(
-                rf""" **Άρα:** $$\sum \text{{M}}_{{\text{{Rc}}}} \geq 1.3 \sum \text{{M}}_{{\text{{Rb}}}} → {SMRc:.2f}\, \text{{kNm}} \geq {1.3 * SMRb:.2f}\, \text{{kNm}}$$"""
+                rf""" **Άρα:** $$\sum \text{{M}}_{{\text{{Rc}}}} \geq 1.3 \cdot \sum \text{{M}}_{{\text{{Rb}}}} → {SMRc:.2f}\, \text{{kNm}} \geq {1.3 * SMRb:.2f}\, \text{{kNm}}$$"""
             )
                 st.success(
                 "Η ανισότητα **ικανοποιείται**!", icon="🥳"
             )
             else:
                 st.markdown(
-                rf""" **Άρα:** $$\sum \text{{M}}_{{\text{{Rc}}}} < 1.3 \sum \text{{M}}_{{\text{{Rb}}}} → {SMRc:.2f}\, \text{{kNm}} < {1.3 * SMRb:.2f}\, \text{{kNm}}$$"""
+                rf""" **Άρα:** $$\sum \text{{M}}_{{\text{{Rc}}}} < 1.3 \cdot \sum \text{{M}}_{{\text{{Rb}}}} → {SMRc:.2f}\, \text{{kNm}} < {1.3 * SMRb:.2f}\, \text{{kNm}}$$"""
             )
                 st.error(
                 "Η ανισότητα **δεν ικανοποιείται**.",
@@ -1518,20 +1518,20 @@ if epilogi == "Ικανοτικός σχεδιασμός στους κόμβου
             SMRc = SMRc_eks_th(MRc1_p, MRc2_n)
             SMRb = abs(MRb1_n)
             st.markdown(
-                rf""" **⇒** $$\sum \text{{M}}_{{\text{{Rc}}}} = \text{{M}}_{{\text{{Rc,}}_{{1}}}}^+ + \text{{M}}_{{\text{{Rc,}}_{{2}}}}^- = {SMRc:.2f}\, \text{{kNm}}$$"""
+                rf""" **⇒** $$\sum \text{{M}}_{{\text{{Rc}}}} = \text{{M}}_{{\text{{Rc,1}}}}^+ + \text{{M}}_{{\text{{Rc,2}}}}^- = {SMRc:.2f}\, \text{{kNm}}$$"""
             )
             st.markdown(
             rf""" **⇒** $$\sum \text{{M}}_{{\text{{Rb}}}} = \text{{M}}_{{\text{{Rb}}}}^- = {SMRb:.2f}\, \text{{kNm}}$$""")
             if SMRc >= 1.3 * SMRb:
                  st.markdown(
-                 rf""" **Άρα:** $$\sum \text{{M}}_{{\text{{Rc}}}} \geq 1.3 \sum \text{{M}}_{{\text{{Rb}}}} → {SMRc:.2f}\, \text{{kNm}} \geq {1.3 * SMRb:.2f}\, \text{{kNm}}$$"""
+                 rf""" **Άρα:** $$\sum \text{{M}}_{{\text{{Rc}}}} \geq 1.3 \cdot \sum \text{{M}}_{{\text{{Rb}}}} → {SMRc:.2f}\, \text{{kNm}} \geq {1.3 * SMRb:.2f}\, \text{{kNm}}$$"""
             )
                  st.success(
                 "Η ανισότητα **ικανοποιείται**!", icon="🥳"
             )
             else:
                  st.markdown(
-                 rf""" **Άρα:** $$\sum \text{{M}}_{{\text{{Rc}}}} < 1.3 \sum \text{{M}}_{{\text{{Rb}}}} → {SMRc:.2f}\, \text{{kNm}} < {1.3 * SMRb:.2f}\, \text{{kNm}} $"""
+                 rf""" **Άρα:** $$\sum \text{{M}}_{{\text{{Rc}}}} < 1.3 \cdot \sum \text{{M}}_{{\text{{Rb}}}} → {SMRc:.2f}\, \text{{kNm}} < {1.3 * SMRb:.2f}\, \text{{kNm}} $"""
             )
                  st.error(
                 "Η ανισότητα **δεν ικανοποιείται**.",
@@ -1544,20 +1544,20 @@ if epilogi == "Ικανοτικός σχεδιασμός στους κόμβου
             SMRc = SMRc_eks_arn(MRc2_p, MRc1_n)
             SMRb = abs(MRb2_n)
             st.markdown(
-                rf""" **⇒** $$\sum \text{{M}}_{{\text{{Rc}}}} = \text{{M}}_{{\text{{Rc,}}_{{1}}}}^+ + \text{{M}}_{{\text{{Rc,}}_{{1}}}}^- = {SMRc:.2f}\, \text{{kNm}}$$"""
+                rf""" **⇒** $$\sum \text{{M}}_{{\text{{Rc}}}} = \text{{M}}_{{\text{{Rc,1}}}}^+ + \text{{M}}_{{\text{{Rc,1}}}}^- = {SMRc:.2f}\, \text{{kNm}}$$"""
             )
             st.markdown(
             rf""" **⇒** $$\sum \text{{M}}_{{\text{{Rb}}}} = \text{{M}}_{{\text{{Rb}}}}^+ = {SMRb:.2f}\, \text{{kNm}}$$""")
             if SMRc >= 1.3 * SMRb:
                 st.markdown(
-                rf""" **Άρα:** $$\sum \text{{M}}_{{\text{{Rc}}}} \geq 1.3 \sum \text{{M}}_{{\text{{Rb}}}} → {SMRc:.2f}\, \text{{kNm}} \geq {1.3 * SMRb:.2f}\, \text{{kNm}} $$"""
+                rf""" **Άρα:** $$\sum \text{{M}}_{{\text{{Rc}}}} \geq 1.3 \cdot \sum \text{{M}}_{{\text{{Rb}}}} → {SMRc:.2f}\, \text{{kNm}} \geq {1.3 * SMRb:.2f}\, \text{{kNm}} $$"""
             )
                 st.success(
                 "Η ανισότητα **ικανοποιείται**!", icon="🥳"
             )
             else:
                 st.markdown(
-                rf""" **Άρα:** $$\sum \text{{M}}_{{\text{{Rc}}}} < 1.3 \sum \text{{M}}_{{\text{{Rb}}}} → {SMRc:.2f}\, \text{{kNm}} < {1.3 * SMRb:.2f}\, \text{{kNm}}$$"""
+                rf""" **Άρα:** $$\sum \text{{M}}_{{\text{{Rc}}}} < 1.3 \cdot \sum \text{{M}}_{{\text{{Rb}}}} → {SMRc:.2f}\, \text{{kNm}} < {1.3 * SMRb:.2f}\, \text{{kNm}}$$"""
             )
                 st.error(
                 "Η ανισότητα **δεν ικανοποιείται**.",
@@ -1570,20 +1570,20 @@ if epilogi == "Ικανοτικός σχεδιασμός στους κόμβου
             SMRc = SMRc_eks_arn(MRc2_p, MRc1_n)
             SMRb = MRb1_p
             st.markdown(
-                rf""" **⇒** $$\sum \text{{M}}_{{\text{{Rc}}}} = \text{{M}}_{{\text{{Rc,}}_{{1}}}}^+ + \text{{M}}_{{\text{{Rc,}}_{{1}}}}^- = {SMRc:.2f}\, \text{{kNm}}$$"""
+                rf""" **⇒** $$\sum \text{{M}}_{{\text{{Rc}}}} = \text{{M}}_{{\text{{Rc,1}}}}^+ + \text{{M}}_{{\text{{Rc,1}}}}^- = {SMRc:.2f}\, \text{{kNm}}$$"""
             )
             st.markdown(
             rf""" **⇒** $$\sum \text{{M}}_{{\text{{Rb}}}} = \text{{M}}_{{\text{{Rb}}}}^+ = {SMRb:.2f}\, \text{{kNm}}$$""")
             if SMRc >= 1.3 * SMRb:
                 st.markdown(
-                rf""" **Άρα:** $$\sum \text{{M}}_{{\text{{Rc}}}} \geq 1.3 \sum \text{{M}}_{{\text{{Rb}}}} → {SMRc:.2f}\, \text{{kNm}} \geq {1.3 * SMRb:.2f}\, \text{{kNm}}$$"""
+                rf""" **Άρα:** $$\sum \text{{M}}_{{\text{{Rc}}}} \geq 1.3 \cdot \sum \text{{M}}_{{\text{{Rb}}}} → {SMRc:.2f}\, \text{{kNm}} \geq {1.3 * SMRb:.2f}\, \text{{kNm}}$$"""
             )
                 st.success(
                 "Η ανισότητα **ικανοποιείται**!", icon="🥳"
             )
             else:
                 st.markdown(
-                rf""" **Άρα:** $$\sum \text{{M}}_{{\text{{Rc}}}} < 1.3 \sum \text{{M}}_{{\text{{Rb}}}} → {SMRc:.2f}\, \text{{kNm}} < {1.3 * SMRb:.2f}\, \text{{kNm}}$$"""
+                rf""" **Άρα:** $$\sum \text{{M}}_{{\text{{Rc}}}} < 1.3 \cdot \sum \text{{M}}_{{\text{{Rb}}}} → {SMRc:.2f}\, \text{{kNm}} < {1.3 * SMRb:.2f}\, \text{{kNm}}$$"""
             )
                 st.error(
                 "Η ανισότητα **δεν ικανοποιείται**.",
