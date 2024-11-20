@@ -41,7 +41,7 @@ if epilogi == "Ικανοτικός σχεδιασμός σε διάτμηση":
                 lb = st.number_input('Μήκος δοκού $l_b$:', value=5.5, step=0.1, format="%.2f")
             with col2:
                 st.info('**Τέμνουσες:**')
-                V0b = st.number_input('Τέμνουσα της δοκού $V0,_b$:', value=60.0, step=0.1, format="%.2f")
+                V0b = st.number_input('Τέμνουσα της δοκού $V_{0,_b}$:', value=60.0, step=0.1, format="%.2f")
             st.divider()
             st.info("**Ροπές αντοχής:**")
             col1,col2 =st.columns(2)
