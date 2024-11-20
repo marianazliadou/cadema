@@ -996,7 +996,7 @@ if epilogi == "Ικανοτικός σχεδιασμός σε διάτμηση":
 
       **και**
 
-      $$\text{min} \text{V}_{\text{d}_\text{(y)}} = \gamma_{\text{\text{Rd}}} \cdot \dfrac{( \text{M}_{\text{Rc,1}}^{-} + \text{M}_{\text{Rc,}_{2}}^{+} )}{\text{L}_{\text{cl}}}$$
+      $$\text{min} \text{V}_{\text{d}_\text{(y)}} = - \gamma_{\text{\text{Rd}}} \cdot \dfrac{( \text{M}_{\text{Rc,1}}^{-} + \text{M}_{\text{Rc,}_{2}}^{+} )}{\text{L}_{\text{cl}}}$$
 
       **Άρα:**
       """)
@@ -1040,11 +1040,11 @@ if epilogi == "Ικανοτικός σχεδιασμός σε διάτμηση":
             st.write("")
 
             st.markdown(r"""
-      $$\text{maxV}_{\text{d}_\text{(y)}} = \dfrac{\gamma_{\text{Rd}} \times \left( (\text{M}_{\text{Rc,}_{1}}^{+} \times \dfrac{\sum \text{M}_{\text{Rb,άνω}}}{\sum \text{M}_{\text{Rc,άνω}}}) + \text{M}_{\text{Rc,}_{2}}^- \right)}{\text{L}_{\text{cl}}}$$
+      $$\text{maxV}_{\text{d}_\text{(y)}} = \dfrac{\gamma_{\text{Rd}} \cdot \left[ \text{M}_{\text{Rc,}_{1}}^{+} \cdot \dfrac{\sum \text{M}_{\text{Rb,άνω}}}{\sum \text{M}_{\text{Rc,άνω}}}) + \text{M}_{\text{Rc,}_{2}}^- \right) \right] }{\text{L}_{\text{cl}}}$$
 
       **και**
 
-      $$\text{minV}_{\text{d}_\text{(y)}} = \dfrac{\gamma_{\text{Rd}} \times \left( (\text{M}_{\text{Rc,}_{1}}^- \times \dfrac{\sum \text{M}_{\text{Rb,άνω}}}{\sum \text{M}_{\text{Rc,άνω}}}) + \text{M}_{\text{Rc,}_{2}}^+ \right)}{\text{L}_{\text{cl}}}$$
+      $$\text{minV}_{\text{d}_\text{(y)}} = \dfrac{\gamma_{\text{Rd}} \cdot \left[ \text{M}_{\text{Rc,}_{1}}^- \cdot \dfrac{\sum \text{M}_{\text{Rb,άνω}}}{\sum \text{M}_{\text{Rc,άνω}}} + \text{M}_{\text{Rc,}_{2}}^+ \right) \right] }{\text{L}_{\text{cl}}}$$
 
       **Άρα:**
       """)
