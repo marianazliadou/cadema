@@ -478,11 +478,11 @@ if epilogi == "Ικανοτικός σχεδιασμός σε διάτμηση":
             st.write("")
 
             st.markdown(r"""
-      $$\text{max} \text{V}_{\text{d}_\text{(x)}} = \dfrac{ \gamma_{\text{Rd}} \cdot \left[ \text{M}_{\text{Rb,1}}^- + \left( \text{M}_{\text{Rb,2}}^{+} \cdot \dfrac{\sum \text{M}_{\text{Rc,δεξ}}}{\sum \text{M}_{\text{Rb,δεξ}}} \right) \right] }{\text{L}_{\text{cl}}} + \text{V}_{\text{G} + {\text{ψ}_2}{\text{Q}_o}_\text{(x)}}$$  
+      $$\text{max} \text{V}_{\text{d}_\text{(x)}} = \dfrac{ \gamma_{\text{Rd}} \cdot \left[ \text{M}_{\text{Rb,1}}^- + \left( \text{M}_{\text{Rb,2}}^+ \cdot \dfrac{\sum \text{M}_{\text{Rc,δεξ}}}{\sum \text{M}_{\text{Rb,δεξ}}} \right) \right] }{\text{L}_{\text{cl}}} + \text{V}_{\text{G} + {\text{ψ}_2}{\text{Q}_o}_\text{(x)}}$$  
 
       **και**
 
-      $$\text{min} \text{V}_{\text{d}_\text{(x)}} = - \dfrac{ \gamma_{\text{Rd}} \cdot \left[ \text{M}_{\text{Rb,1}}^{+} + \left( \text{M}_{\text{Rb,2}}^{-} \cdot \dfrac{\sum \text{M}_{\text{Rc,δεξ}}}{\sum \text{M}_{\text{Rb,δεξ}}} \right) \right] }{\text{L}_{\text{cl}}} + \text{V}_{\text{G} + {\text{ψ}_2}{\text{Q}_o}_\text{(x)}}$$  
+      $$\text{min} \text{V}_{\text{d}_\text{(x)}} = - \dfrac{ \gamma_{\text{Rd}} \cdot \left[ \text{M}_{\text{Rb,1}}^+ + \left( \text{M}_{\text{Rb,2}}^- \cdot \dfrac{\sum \text{M}_{\text{Rc,δεξ}}}{\sum \text{M}_{\text{Rb,δεξ}}} \right) \right] }{\text{L}_{\text{cl}}} + \text{V}_{\text{G} + {\text{ψ}_2}{\text{Q}_o}_\text{(x)}}$$  
 
       **Άρα:**   
       """)
