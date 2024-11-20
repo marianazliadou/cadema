@@ -996,7 +996,7 @@ if epilogi == "Ικανοτικός σχεδιασμός σε διάτμηση":
 
       **και**
 
-      $$\text{min} \text{V}_{\text{d}_\text{(y)}} = - \gamma_{\text{\text{Rd}}} \cdot \dfrac{( \text{M}_{\text{Rc,1}}^{-} + \text{M}_{\text{Rc,2}}^{+} )}{\text{L}_{\text{cl}}}$$
+      $$\text{min} \text{V}_{\text{d}_\text{(y)}} = - \gamma_{\text{\text{Rd}}} \cdot \dfrac{( \text{M}_{\text{Rc,1}}^{-} + \text{M}_{\text{Rc,2}}^+ )}{\text{L}_{\text{cl}}}$$
 
       **Άρα:**
       """)
