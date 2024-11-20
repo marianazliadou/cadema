@@ -1233,13 +1233,13 @@ if epilogi == "Ικανοτικός σχεδιασμός στους κόμβου
                  st.markdown(rf"""
         **▧ Θετική** φόρτιση: 
         
-        $$\text{{M}}_{{\text{{Rb,}}_{{1}}}}^+ = {MRb1_p:.2f}\, \text{{kNm}}$$""")
+        $$\text{{M}}_{{\text{{Rb,1}}}}^+ = {MRb1_p:.2f}\, \text{{kNm}}$$""")
                  
             with col2:  
                  st.info("**Αριστερά:**")
                  st.markdown(rf"""
         **▧ Θετική** φόρτιση: 
-        $$\text{{M}}_{{\text{{Rb,}}_{{2}}}}^- = {MRb2_n:.2f}\, \text{{kNm}}$$""")   
+        $$\text{{M}}_{{\text{{Rb,2}}}}^- = {MRb2_n:.2f}\, \text{{kNm}}$$""")   
         else:
             col1,col2 = st.columns(2)
             with col1:
@@ -1247,14 +1247,14 @@ if epilogi == "Ικανοτικός σχεδιασμός στους κόμβου
                 st.markdown(rf"""
         **▧ Αρνητική** φόρτιση: 
         
-        $$\text{{M}}_{{\text{{Rb,}}_{{1}}}}^- = {MRb1_n:.2f}\, \text{{kNm}}$$""")
+        $$\text{{M}}_{{\text{{Rb,1}}}}^- = {MRb1_n:.2f}\, \text{{kNm}}$$""")
                 
             with col2:
                  st.info("**Αριστερά:**")
                  st.markdown(rf"""
         **▧ Αρνητική** φόρτιση: 
 
-        $$\text{{M}}_{{\text{{Rb,}}_{{2}}}}^+ = {MRb2_p:.2f}\, \text{{kNm}}$$""")
+        $$\text{{M}}_{{\text{{Rb,2}}}}^+ = {MRb2_p:.2f}\, \text{{kNm}}$$""")
 
         st.divider()
         st.write("Οι ροπές αντοχής των **υποστυλωμάτων** για:")
@@ -1265,13 +1265,13 @@ if epilogi == "Ικανοτικός σχεδιασμός στους κόμβου
                  st.markdown(rf"""
         **▧ Θετική** φόρτιση: 
 
-        $$\text{{M}}_{{\text{{Rc,}}_{{1}}}}^+ = {MRc1_p:.2f}\, \text{{kNm}}$$""")
+        $$\text{{M}}_{{\text{{Rc,1}}}}^+ = {MRc1_p:.2f}\, \text{{kNm}}$$""")
              with col2:
                  st.info("**Κάτω:**")
                  st.markdown(rf"""
         **▧ Θετική** φόρτιση: 
 
-        $$\text{{M}}_{{\text{{Rc,}}_{{2}}}}^- = {MRc2_n:.2f}\, \text{{kNm}}$$""")
+        $$\text{{M}}_{{\text{{Rc,2}}}}^- = {MRc2_n:.2f}\, \text{{kNm}}$$""")
         else:
             col1,col2=st.columns(2)
             with col1:
@@ -1279,13 +1279,13 @@ if epilogi == "Ικανοτικός σχεδιασμός στους κόμβου
                 st.markdown(rf"""
         **▧ Αρνητική** φόρτιση: 
 
-        $$\text{{M}}_{{\text{{Rc,}}_{{1}}}}^- = {MRc1_n:.2f}\, \text{{kNm}}$$""")
+        $$\text{{M}}_{{\text{{Rc,1}}}}^- = {MRc1_n:.2f}\, \text{{kNm}}$$""")
             with col2:
                 st.info("**Κάτω:**")
                 st.markdown(rf"""
         **▧ Αρνητική** φόρτιση: 
 
-        $$\text{{M}}_{{\text{{Rc,}}_{{2}}}}^+ = {MRc2_p:.2f}\, \text{{kNm}}$$""")
+        $$\text{{M}}_{{\text{{Rc,2}}}}^+ = {MRc2_p:.2f}\, \text{{kNm}}$$""")
 
         st.divider()
         st.info("**Ελεγχος ανισότητας:**")
@@ -1293,10 +1293,10 @@ if epilogi == "Ικανοτικός σχεδιασμός στους κόμβου
              SMRc = SMRc_th(MRc1_p, MRc2_n)
              SMRb = SMRb_th(MRb1_p, MRb2_n)
              st.markdown(
-            rf""" **⇒** $$\sum \text{{M}}_\text{{Rc}} = \text{{M}}_{{\text{{Rc,}}_{{1}}}}^+ + \text{{M}}_{{\text{{Rc,}}_{{2}}}}^- = {SMRc:.2f}\, \text{{kNm}}$$"""
+            rf""" **⇒** $$\sum \text{{M}}_\text{{Rc}} = \text{{M}}_{{\text{{Rc,1}}}}^+ + \text{{M}}_{{\text{{Rc,2}}}}^- = {SMRc:.2f}\, \text{{kNm}}$$"""
         )
              st.markdown(
-            rf""" **⇒** $$\sum \text{{M}}_\text{{Rb}} = \text{{M}}_{{\text{{Rb,}}_{{1}}}}^+ + \text{{M}}_{{\text{{Rb,}}_{{2}}}}^- = {SMRb:.2f}\,\text{{kNm}}$$"""
+            rf""" **⇒** $$\sum \text{{M}}_\text{{Rb}} = \text{{M}}_{{\text{{Rb,1}}}}^+ + \text{{M}}_{{\text{{Rb,2}}}}^- = {SMRb:.2f}\,\text{{kNm}}$$"""
         )
              st.write("")
              if SMRc >= 1.3 * SMRb:
@@ -1320,10 +1320,10 @@ if epilogi == "Ικανοτικός σχεδιασμός στους κόμβου
              SMRc = SMRc_ar(MRc1_n, MRc2_p)
              SMRb = SMRb_ar(MRb1_n, MRb2_p)
              st.markdown(
-            rf""" **⇒** $$\sum \text{{M}}_\text{{Rc}} = \text{{M}}_{{\text{{Rc,}}_{{1}}}}^- + \text{{M}}_{{\text{{Rc,}}_{{2}}}}^+ = {SMRc:.2f}\, \text{{kNm}}$$"""
+            rf""" **⇒** $$\sum \text{{M}}_\text{{Rc}} = \text{{M}}_{{\text{{Rc,1}}}}^- + \text{{M}}_{{\text{{Rc,2}}}}^+ = {SMRc:.2f}\, \text{{kNm}}$$"""
         )
              st.markdown(
-            rf""" **⇒** $$\sum \text{{M}}_\text{{Rb}} = \text{{M}}_{{\text{{Rb,}}_{{1}}}}^- + \text{{M}}_{{\text{{Rb,}}_{{2}}}}^+ = {SMRb:.2f}\,\text{{kNm}}$$"""
+            rf""" **⇒** $$\sum \text{{M}}_\text{{Rb}} = \text{{M}}_{{\text{{Rb,1}}}}^- + \text{{M}}_{{\text{{Rb,2}}}}^+ = {SMRb:.2f}\,\text{{kNm}}$$"""
         )
              st.write("")
              if SMRc >= 1.3 * SMRb:
