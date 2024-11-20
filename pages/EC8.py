@@ -1194,14 +1194,14 @@ if epilogi == "Ικανοτικός σχεδιασμός στους κόμβου
                 
             with col2:
                 st.info("**Ροπές υποστυλώματος:**")
-                st.success("**Άνω:**")
+                st.error("**Άνω:**")
                 MRc1_n = st.number_input(
                     "**Αρνητική** ροπή αντοχής $M_{Rc,1}^-$:", value=-50.0, step=0.1, format="%.2f"
                 )
                 MRc1_p = st.number_input(
                     "**Θετική** ροπή αντοχής $M_{Rc,1}^+$:", value=100.0, step=0.1, format="%.2f"
                 )
-                st.success("**Κάτω:**")
+                st.error("**Κάτω:**")
                 MRc2_n = st.number_input(
                     "**Αρνητική** ροπή αντοχής $M_{Rc,2}^-$:", value=-120.0, step=0.1, format="%.2f"
                 )
