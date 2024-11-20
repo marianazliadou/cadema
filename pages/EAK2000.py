@@ -207,8 +207,8 @@ elif epilogi == 'Ικανοτικός σχεδιασμός στους κόμβο
             SMEb = st.number_input('**Άθροισμα ροπών** $ΣΜ_{Ed}$:', value = 50.0, step=0.1, format='%.2f')
             st.divider()
             st.info('**Ροπές σεισμού:**')
-            MEc_t = st.number_input('**Θετική** σεισμική φροά $MΕc^+$', value= 200.0,  step=0.1, format="%.2f")
-            MEc_a = st.number_input('**Αρνητική** σεισιμική φορά $MΕc^-$',value = - 100.0, step=0.1, format="%.2f")
+            MEc_t = st.number_input('**Θετική** σεισμική φροά $M_{Εc}^+$', value= 200.0,  step=0.1, format="%.2f")
+            MEc_a = st.number_input('**Αρνητική** σεισιμική φορά $M_{Εc}^-$',value = - 100.0, step=0.1, format="%.2f")
            
   
     st.divider()
