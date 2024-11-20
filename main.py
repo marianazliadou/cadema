@@ -35,5 +35,6 @@ st.markdown("""<div style=
   "background-color: #008B8B;
    padding: 3px;
    border-radius: 20px;"><p style="color: #F8F8FF; font-size: 20px; text-align: center;">Ικανοτικός σχεδιασμός σε κόμβο</p></div>""", unsafe_allow_html=True)
+st.write("")
 komvos_url = "images/FLOW2.jpg"
 st.image(komvos_url,  width=1000)
