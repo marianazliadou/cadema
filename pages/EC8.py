@@ -1015,11 +1015,11 @@ if epilogi == "Ικανοτικός σχεδιασμός σε διάτμηση":
             st.write("")
 
             st.markdown(r"""
-      $$\text{maxV}_{\text{d}_\text{(y)}} = \dfrac{\gamma_{\text{Rd}} \times \left( \text{M}_{\text{Rc,}_{1}}^+ \times \dfrac{\sum \text{M}_{\text{Rb,άνω}}}{\sum \text{M}_{\text{Rc,άνω}}} \right) + \left( \text{M}_{\text{Rc,}_{2}}^- \times \dfrac{\sum \text{M}_{\text{Rb,κάτω}}}{\sum \text{M}_{\text{Rc,κάτω}}} \right)}{\text{L}_{\text{cl}}}$$
+      $$\text{maxV}_{\text{d}_\text{(y)}} = \dfrac{\gamma_{\text{Rd}} \cdot \left( \text{M}_{\text{Rc,}_{1}}^+ \cdot \dfrac{\sum \text{M}_{\text{Rb,άνω}}}{\sum \text{M}_{\text{Rc,άνω}}} \right) + \left( \text{M}_{\text{Rc,}_{2}}^- \cdot \dfrac{\sum \text{M}_{\text{Rb,κάτω}}}{\sum \text{M}_{\text{Rc,κάτω}}} \right)}{\text{L}_{\text{cl}}}$$
 
       **και**
 
-      $$\text{minV}_{\text{d}_\text{(y)}} = \dfrac{\gamma_{\text{Rd}} \times \left( \text{M}_{\text{Rc,}_{1}}^{-} \times \dfrac{\sum \text{M}_{\text{Rb,άνω}}}{\sum \text{M}_{\text{Rc,άνω}}} \right) + \left( \text{M}_{\text{Rc,}_{2}}^{+} \times \dfrac{\sum \text{M}_{\text{Rb,κάτω}}}{\sum \text{M}_{\text{Rc,κάτω}}} \right)}{\text{L}_{\text{cl}}}$$
+      $$\text{minV}_{\text{d}_\text{(y)}} = \dfrac{\gamma_{\text{Rd}} \cdot \left( \text{M}_{\text{Rc,}_{1}}^{-} \cdot \dfrac{\sum \text{M}_{\text{Rb,άνω}}}{\sum \text{M}_{\text{Rc,άνω}}} \right) + \left( \text{M}_{\text{Rc,}_{2}}^{+} \cdot \dfrac{\sum \text{M}_{\text{Rb,κάτω}}}{\sum \text{M}_{\text{Rc,κάτω}}} \right)}{\text{L}_{\text{cl}}}$$
 
       **Άρα:**
       """)
