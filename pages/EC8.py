@@ -933,7 +933,7 @@ if epilogi == "Ικανοτικός σχεδιασμός σε διάτμηση":
                 if fora == 'Θετική':
                   col1, col2 = st.columns([1,10])
                   with col2:
-                     upost_thetiki_kato_url = "images/upost_thetiki_kato.jpg"
+                     upost_thetiki_kato_url = "images/ipostil_kato_thetiko.jpg"
                      st.image(upost_thetiki_kato_url, caption="Φορά των ροπών που συντρέχουν στο κάτω άκρο του υποστυλώματος για θετική σεισμική φορά.", width=550)
                   M2daa = Mid_s(grd, MRc_2a)
                   M2daa = round(M2daa, 2)
@@ -942,7 +942,7 @@ if epilogi == "Ικανοτικός σχεδιασμός σε διάτμηση":
                 else:
                   col1,col2 = st.columns([1,10])
                   with col2:
-                     upost_arnitiko_kato_url = "images/upost_arnitiko_kato.jpg"
+                     upost_arnitiko_kato_url = "images/ipostil_kato_arnitiko.jpg"
                      st.image(upost_arnitiko_kato_url, caption="Φορά των ροπών που συντρέχουν στο κάτω άκρο του υποστυλώματος για αρνητική σεισμική φορά.", width=550)
                   M2dtt = Mid_s(grd, MRc_2t)
                   M2dtt = round(M2dtt, 2)
