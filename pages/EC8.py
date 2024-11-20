@@ -669,17 +669,17 @@ if epilogi == "Ικανοτικός σχεδιασμός σε διάτμηση":
 
         with st.expander("**Τα αριθμητικά δεδομένα σας**"):
             st.info("**Δεδομένα υποστυλώματος**")
-            lcl = st.number_input("**Μήκος δοκού:** $l_{cl}$", value=5.5, step=0.1, format="%.1f")
+            lcl = st.number_input("**Μήκος δοκού:** $L_{cl}$", value=5.5, step=0.1, format="%.1f")
             col1, col2_3, col4 = st.columns([1, 2, 1])
             with col1:
                 an_upost = st.checkbox("Άνω υποστύλωμα")
                 if an_upost:
                     st.error("**Ροπές αντοχής άνω υποστυλώματος:**")
                     MRc1o_a = st.number_input(
-                        "**Αρνητική** ροπή αντοχής $MRc,1_{over}^-$:", value=-10.0, step=0.1, format="%.1f"
+                        "**Αρνητική** ροπή αντοχής $M_{Rc,1_{over}}^-$:", value=-10.0, step=0.1, format="%.1f"
                     )
                     MRc1o_t = st.number_input(
-                        "**Θετική** ροπή αντοχής $MRc,1_{over}^+$:", value=10.0, step=0.1, format="%.1f"
+                        "**Θετική** ροπή αντοχής $M_{Rc,1_{over}}^+$:", value=10.0, step=0.1, format="%.1f"
                     )
                 else:
                     st.write("")
@@ -691,10 +691,10 @@ if epilogi == "Ικανοτικός σχεδιασμός σε διάτμηση":
                     if andokos_de:
                       st.error("**Δεξιά:**")
                       MRb_1a = st.number_input(
-                          "**Αρνητική** ροπή αντοχής: $MRb,1^-$:", value=-250.0, step=0.1, format="%.1f"
+                          "**Αρνητική** ροπή αντοχής: $M_{Rb,1}^-$:", value=-250.0, step=0.1, format="%.1f"
                       )
                       MRb_1t = st.number_input(
-                          "**Θετική** ροπή αντοχής: $MRb,1^+$:", value=500.0, step=0.1, format="%.1f"
+                          "**Θετική** ροπή αντοχής: $M_{Rb,1}^+$:", value=500.0, step=0.1, format="%.1f"
                       )
                     else:
                         st.write("")
@@ -702,10 +702,10 @@ if epilogi == "Ικανοτικός σχεδιασμός σε διάτμηση":
                     if andokos_ar:
                       st.error("**Αριστερά:**")
                       MRb_2a = st.number_input(
-                          "**Αρνητική** ροπή αντοχής: $MRb,2^-$:", value=-300.0, step=0.1, format="%.1f"
+                          "**Αρνητική** ροπή αντοχής: $M_{Rb,2}^-$:", value=-300.0, step=0.1, format="%.1f"
                       )
                       MRb_2t = st.number_input(
-                          "**Θετική** ροπή αντοχής: $MRb,2^+$:", value=600.0, step=0.1, format="%.1f"
+                          "**Θετική** ροπή αντοχής: $M_{Rb,2}^+$:", value=600.0, step=0.1, format="%.1f"
                       )
                     else:
                         st.write("")
@@ -718,18 +718,18 @@ if epilogi == "Ικανοτικός σχεδιασμός σε διάτμηση":
                 with col1:
                     st.success("**Άνω:**")
                     MRc_1a = st.number_input(
-                        "**Αρνητική** ροπή αντοχής $MRc,1^-$:", value=-250.0, step=0.1, format="%.1f"
+                        "**Αρνητική** ροπή αντοχής $M_{Rc,1}^-$:", value=-250.0, step=0.1, format="%.1f"
                     )
                     MRc_1t = st.number_input(
-                        "**Θετική** ροπή αντοχής $MRc,1^+$:", value=500.0, step=0.1, format="%.1f"
+                        "**Θετική** ροπή αντοχής $M_{Rc,1}^+$:", value=500.0, step=0.1, format="%.1f"
                     )
                 with col2:
                     st.success("**Κάτω:**")
                     MRc_2a = st.number_input(
-                        "**Αρνητική** ροπή αντοχής $MRc,2^-$:", value=-300.0, step=0.1, format="%.1f"
+                        "**Αρνητική** ροπή αντοχής $M_{Rc,2}^-$:", value=-300.0, step=0.1, format="%.1f"
                     )
                     MRc_2t = st.number_input(
-                        "**Θετική** ροπή αντοχής $MRc,2^+$:", value=600.0, step=0.1, format="%.1f"
+                        "**Θετική** ροπή αντοχής $M_{Rc,2}^+$:", value=600.0, step=0.1, format="%.1f"
                     )
 
             with col4:
@@ -737,10 +737,10 @@ if epilogi == "Ικανοτικός σχεδιασμός σε διάτμηση":
                 if kat_upost:
                     st.error("**Ροπές αντοχής κάτω υποστυλώματος:**")
                     MRc2u_a = st.number_input(
-                        "**Αρνητική** ροπή αντοχής $MRc,2_{under}^-$:", value=-100.0, step=0.1, format="%.1f"
+                        "**Αρνητική** ροπή αντοχής $M_{Rc,2_{under}}^-$:", value=-100.0, step=0.1, format="%.1f"
                     )
                     MRc2u_t = st.number_input(
-                        "**Θετική** ροπή αντοχής $MRc,2_{under}^+$:", value=200.0, step=0.1, format="%.1f"
+                        "**Θετική** ροπή αντοχής $M_{Rc,2_{under}}^+$:", value=200.0, step=0.1, format="%.1f"
                     )
                 else:
                     st.write("")
@@ -752,20 +752,20 @@ if epilogi == "Ικανοτικός σχεδιασμός σε διάτμηση":
                     if kdokos_de:
                       st.error("**Δεξιά:**")
                       MRb_3a = st.number_input(
-                          "**Αρνητική** ροπή αντοχής: $MRb,3^-$:", value=-100.0, step=0.1, format="%.1f"
+                          "**Αρνητική** ροπή αντοχής: $M_{Rb,3}^-$:", value=-100.0, step=0.1, format="%.1f"
                       )
                       MRb_3t = st.number_input(
-                          "**Θετική** ροπή αντοχής: $MRb,3^+$:", value=200.0, step=0.1, format="%.1f"
+                          "**Θετική** ροπή αντοχής: $M_{Rb,3}^+$:", value=200.0, step=0.1, format="%.1f"
                       )
                     else: st.write("")
                     katdokos_ar = st.checkbox("Αριστερά:")
                     if katdokos_ar:
                       st.error("**Αριστερά:**")
                       MRb_4a = st.number_input(
-                          "**Αρνητική** ροπή αντοχής: $MRb,4^-$:", value=-50.0, step=0.1, format="%.1f"
+                          "**Αρνητική** ροπή αντοχής: $M_{Rb,4}^-$:", value=-50.0, step=0.1, format="%.1f"
                       )
                       MRb_4t = st.number_input(
-                          "**Θετική** ροπή αντοχής: $MRb,4^+$:", value=100.0, step=0.1, format="%.1f"
+                          "**Θετική** ροπή αντοχής: $M_{Rb,4}^+$:", value=100.0, step=0.1, format="%.1f"
                       )
                     else:
                         st.write("")
