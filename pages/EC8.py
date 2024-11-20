@@ -1179,34 +1179,34 @@ if epilogi == "Ικανοτικός σχεδιασμός στους κόμβου
                 st.info("**Ροπές δοκού:**")
                 st.success("**Δεξιά:**")
                 MRb1_n = st.number_input(
-                    "**Αρνητική** ροπή αντοχής $MRb,1^-$:", value=-100.0, step=0.1, format="%.2f"
+                    "**Αρνητική** ροπή αντοχής $M_{Rb,1}^-$:", value=-100.0, step=0.1, format="%.2f"
                 )
                 MRb1_p = st.number_input(
-                    "**Θετική** ροπή αντοχής $MRb,1^+$:", value=200.0, step=0.1, format="%.2f"
+                    "**Θετική** ροπή αντοχής $M_{Rb,1}^+$:", value=200.0, step=0.1, format="%.2f"
                 )
                 st.success("**Αριστερά:**")
                 MRb2_n = st.number_input(
-                    "**Αρνητική** ροπή αντοχής $MRb,2^-$:", value=-350.0, step=0.1, format="%.2f"
+                    "**Αρνητική** ροπή αντοχής $M_{Rb,2}^-$:", value=-350.0, step=0.1, format="%.2f"
                 )
                 MRb2_p = st.number_input(
-                    "**Θετική** ροπή αντοχής $MRb,2^+$:", value=700.0, step=0.1, format="%.2f"
+                    "**Θετική** ροπή αντοχής $M_{Rb,2}^+$:", value=700.0, step=0.1, format="%.2f"
                 )
                 
             with col2:
                 st.info("**Ροπές υποστυλώματος:**")
                 st.success("**Άνω:**")
                 MRc1_n = st.number_input(
-                    "**Αρνητική** ροπή αντοχής $MRc,1^-$:", value=-50.0, step=0.1, format="%.2f"
+                    "**Αρνητική** ροπή αντοχής $M_{Rc,1}^-$:", value=-50.0, step=0.1, format="%.2f"
                 )
                 MRc1_p = st.number_input(
-                    "**Θετική** ροπή αντοχής $MRc,1^+$:", value=100.0, step=0.1, format="%.2f"
+                    "**Θετική** ροπή αντοχής $M_{Rc,1}^+$:", value=100.0, step=0.1, format="%.2f"
                 )
                 st.success("**Κάτω:**")
                 MRc2_n = st.number_input(
-                    "**Αρνητική** ροπή αντοχής $MRc,2^-$:", value=-120.0, step=0.1, format="%.2f"
+                    "**Αρνητική** ροπή αντοχής $M_{Rc,2}^-$:", value=-120.0, step=0.1, format="%.2f"
                 )
                 MRc2_p = st.number_input(
-                    "**Θετική** ροπή αντοχής $MRc,2^+$:", value=60.0, step=0.1, format="%.2f"
+                    "**Θετική** ροπή αντοχής $M_{Rc,2}^+$:", value=60.0, step=0.1, format="%.2f"
                 )
 
         st.divider()
