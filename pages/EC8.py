@@ -95,7 +95,7 @@ if epilogi == "Ικανοτικός σχεδιασμός σε διάτμηση":
 
         with st.expander("**Τα αριθμητικά δεδομένα σας**"):
             st.info("**Δεδομένα δοκού:**")
-            lcl = st.number_input("**Μήκος δοκού:** $l_{cl}$", value=5.5, step=0.1, format="%.3f")
+            lcl = st.number_input("**Μήκος δοκού:** $L_cl$", value=5.5, step=0.1, format="%.3f")
             V0_i = st.number_input("**Τέμνουσα κατακόρυφου φορτίου:** $V_{0,i}$", value=50.0, step=0.1, format="%.2f")
             col1, col2_3, col4 = st.columns([1, 2, 1])
             with col1:
