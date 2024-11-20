@@ -1,9 +1,4 @@
 import streamlit as st
-import numpy as np
-import math
-import pandas as pd
-import pyarrow as pa
-import pyarrow.lib as _lib
 from funkEK8 import (
     SMRc_ar_t,
     SMRc_ar_a,
