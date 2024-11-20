@@ -429,11 +429,11 @@ if epilogi == "Ικανοτικός σχεδιασμός σε διάτμηση":
             st.write("")
 
             st.markdown(r"""   
-        $$\text{max} \text{V}_{\text{d}_\text{(x)}} = \dfrac{ \gamma_{\text{Rd}} \times \left[ \left( \text{M}_{\text{Rb,}_{1}}^{-} \times \dfrac{\sum \text{M}_{\text{Rc,αρ}}}{\sum \text{M}_{\text{Rb,αρ}}} \right) + \left( \text{M}_{\text{Rb,}_{2}}^{+} \times \dfrac{\sum \text{M}_{\text{Rc,δεξ}}}{\sum \text{M}_{\text{Rb,δεξ}}} \right) \right] }{\text{L}_{\text{cl}}} + \text{V}_{\text{G}+{\text{ψ}_2}{\text{Q}_o}_\text{(x)}}$$ 
+        $$\text{max} \text{V}_{\text{d}_\text{(x)}} = \dfrac{ \gamma_{\text{Rd}} \times \left[ \left( \text{M}_{\text{Rb,1}}^{-} \times \dfrac{\sum \text{M}_{\text{Rc,αρ}}}{\sum \text{M}_{\text{Rb,αρ}}} \right) + \left( \text{M}_{\text{Rb,2}}^{+} \times \dfrac{\sum \text{M}_{\text{Rc,δεξ}}}{\sum \text{M}_{\text{Rb,δεξ}}} \right) \right] }{\text{L}_{\text{cl}}} + \text{V}_{\text{G}+{\text{ψ}_2}{\text{Q}_o}_\text{(x)}}$$ 
         
         **και**
         
-        $$\text{min} \text{V}_{\text{d}_\text{(x)}} = - \dfrac{ \gamma_{\text{Rd}} \times \left[ \left( \text{M}_{\text{Rb,}_{1}}^{+} \times \dfrac{\sum \text{M}_{\text{Rc,αρ}}}{\sum \text{M}_{\text{Rb,αρ}}} \right) + \left( \text{M}_{\text{Rb,}_{2}}^{-} \times \dfrac{\sum \text{M}_{\text{Rc,δεξ}}}{\sum \text{M}_{\text{Rb,δεξ}}} \right) \right] }{\text{L}_{\text{cl}}} + \text{V}_{\text{G}+{\text{ψ}_2}{\text{Q}_o}_\text{(x)}}$$ 
+        $$\text{min} \text{V}_{\text{d}_\text{(x)}} = - \dfrac{ \gamma_{\text{Rd}} \times \left[ \left( \text{M}_{\text{Rb,1}}^{+} \times \dfrac{\sum \text{M}_{\text{Rc,αρ}}}{\sum \text{M}_{\text{Rb,αρ}}} \right) + \left( \text{M}_{\text{Rb,2}}^{-} \times \dfrac{\sum \text{M}_{\text{Rc,δεξ}}}{\sum \text{M}_{\text{Rb,δεξ}}} \right) \right] }{\text{L}_{\text{cl}}} + \text{V}_{\text{G}+{\text{ψ}_2}{\text{Q}_o}_\text{(x)}}$$ 
         
         **Άρα:**
         """)
@@ -455,11 +455,11 @@ if epilogi == "Ικανοτικός σχεδιασμός σε διάτμηση":
             st.write("")
 
             st.markdown(r"""
-      $$\text{max} \text{V}_{\text{d}_\text{(x)}} = \frac{ \gamma_{\text{Rd}} \times \left[ \left( \text{M}_{\text{Rb,}_{1}}^{-} \times \frac{\sum \text{M}_{\text{Rc,αρ}}}{\sum \text{M}_{\text{Rb,αρ}}} \right) + \text{M}_{\text{Rb,}_{2}}^{+} \right] }{\text{L}_{\text{cl}}} + \text{V}_{\text{G} + {\text{ψ}_2}{\text{Q}_o}_\text{(x)}}$$
+      $$\text{max} \text{V}_{\text{d}_\text{(x)}} = \frac{ \gamma_{\text{Rd}} \times \left[ \left( \text{M}_{\text{Rb,1}}^{-} \times \frac{\sum \text{M}_{\text{Rc,αρ}}}{\sum \text{M}_{\text{Rb,αρ}}} \right) + \text{M}_{\text{Rb,2}}^{+} \right] }{\text{L}_{\text{cl}}} + \text{V}_{\text{G} + {\text{ψ}_2}{\text{Q}_o}_\text{(x)}}$$
 
       **και**
 
-      $$\text{min} \text{V}_{\text{d}_\text{(x)}} = - \frac{ \gamma_{\text{Rd}} \times \left[ \left( \text{M}_{\text{Rb,}_{1}}^{+} \times \frac{\sum \text{M}_{\text{Rc,αρ}}}{\sum \text{M}_{\text{Rb,αρ}}} \right) + \text{M}_{\text{Rb,}_{2}}^{-} \right] }{\text{L}_{\text{cl}}} + \text{V}_{\text{G} + {\text{ψ}_2}{\text{Q}_o}_\text{(x)}}$$
+      $$\text{min} \text{V}_{\text{d}_\text{(x)}} = - \frac{ \gamma_{\text{Rd}} \times \left[ \left( \text{M}_{\text{Rb,1}}^{+} \times \frac{\sum \text{M}_{\text{Rc,αρ}}}{\sum \text{M}_{\text{Rb,αρ}}} \right) + \text{M}_{\text{Rb,2}}^{-} \right] }{\text{L}_{\text{cl}}} + \text{V}_{\text{G} + {\text{ψ}_2}{\text{Q}_o}_\text{(x)}}$$
 
       **Άρα:**   
       """)
@@ -478,11 +478,11 @@ if epilogi == "Ικανοτικός σχεδιασμός σε διάτμηση":
             st.write("")
 
             st.markdown(r"""
-      $$\text{max} \text{V}_{\text{d}_\text{(x)}} = \dfrac{ \gamma_{\text{Rd}} \times \left[ \text{M}_{\text{Rb,}_{1}}^{-} + \left( \text{M}_{\text{Rb,}_{2}}^{+} \times \dfrac{\sum \text{M}_{\text{Rc,δεξ}}}{\sum \text{M}_{\text{Rb,δεξ}}} \right) \right] }{\text{L}_{\text{cl}}} + \text{V}_{\text{G} + {\text{ψ}_2}{\text{Q}_o}_\text{(x)}}$$  
+      $$\text{max} \text{V}_{\text{d}_\text{(x)}} = \dfrac{ \gamma_{\text{Rd}} \times \left[ \text{M}_{\text{Rb,1}}^{-} + \left( \text{M}_{\text{Rb,2}}^{+} \times \dfrac{\sum \text{M}_{\text{Rc,δεξ}}}{\sum \text{M}_{\text{Rb,δεξ}}} \right) \right] }{\text{L}_{\text{cl}}} + \text{V}_{\text{G} + {\text{ψ}_2}{\text{Q}_o}_\text{(x)}}$$  
 
       **και**
 
-      $$\text{min} \text{V}_{\text{d}_\text{(x)}} = - \dfrac{ \gamma_{\text{Rd}} \times \left[ \text{M}_{\text{Rb,}_{1}}^{+} + \left( \text{M}_{\text{Rb,}_{2}}^{-} \times \dfrac{\sum \text{M}_{\text{Rc,δεξ}}}{\sum \text{M}_{\text{Rb,δεξ}}} \right) \right] }{\text{L}_{\text{cl}}} + \text{V}_{\text{G} + {\text{ψ}_2}{\text{Q}_o}_\text{(x)}}$$  
+      $$\text{min} \text{V}_{\text{d}_\text{(x)}} = - \dfrac{ \gamma_{\text{Rd}} \times \left[ \text{M}_{\text{Rb,1}}^{+} + \left( \text{M}_{\text{Rb,2}}^{-} \times \dfrac{\sum \text{M}_{\text{Rc,δεξ}}}{\sum \text{M}_{\text{Rb,δεξ}}} \right) \right] }{\text{L}_{\text{cl}}} + \text{V}_{\text{G} + {\text{ψ}_2}{\text{Q}_o}_\text{(x)}}$$  
 
       **Άρα:**   
       """)
@@ -500,11 +500,11 @@ if epilogi == "Ικανοτικός σχεδιασμός σε διάτμηση":
             st.write("")
 
             st.markdown(r"""
-        $$\text{max} \text{V}_{\text{d}_\text{(x)}} = \gamma_{\text{Rd}} \times \frac{(\text{\text{M}}_{\text{Rb,}_{1}}^{-} + \text{\text{M}}_{\text{Rb,}_{2}}^{+})}{\text{L}_{\text{cl}}} + \text{V}_{\text{G}+{\text{ψ}_2}{\text{Q}_o}_\text{(x)}}$$
+        $$\text{max} \text{V}_{\text{d}_\text{(x)}} = \gamma_{\text{Rd}} \times \frac{(\text{\text{M}}_{\text{Rb,1}}^{-} + \text{\text{M}}_{\text{Rb,2}}^{+})}{\text{L}_{\text{cl}}} + \text{V}_{\text{G}+{\text{ψ}_2}{\text{Q}_o}_\text{(x)}}$$
 
         **και**
 
-        $$\text{min} \text{V}_{\text{d}_\text{(x)}} =  \gamma_{\text{Rd}} \times \frac{(\text{M}_{\text{Rb,}_{1}}^{+} + \text{M}_{\text{Rb,}_{2}}^{-})}{\text{L}_{\text{cl}}} + \text{V}_{\text{G}+{\text{ψ}_2}{\text{Q}_o}_\text{(x)}}$$
+        $$\text{min} \text{V}_{\text{d}_\text{(x)}} =  \gamma_{\text{Rd}} \times \frac{(\text{\text{M}_{\text{Rb,1}}^{+} + \text{\text{M}}_{\text{Rb,2}}^{-})}{\text{L}_{\text{cl}}} + \text{V}_{\text{G}+{\text{ψ}_2}{\text{Q}_o}_\text{(x)}}$$
 
         **Άρα:**       
       """)
