@@ -1040,7 +1040,7 @@ if epilogi == "Ικανοτικός σχεδιασμός σε διάτμηση":
             st.write("")
 
             st.markdown(r"""
-      $$\text{maxV}_{\text{d}_\text{(y)}} = \gamma_{\text{Rd}} \cdot \dfrac{\left[ \text{M}_{\text{Rc,1}}^{+} \cdot \dfrac{\sum \text{M}_{\text{Rb,άνω}}}{\sum \text{M}_{\text{Rc,άνω}}} + \text{M}_{\text{Rc,2}}^- \right] }{\text{L}_{\text{cl}}}$$
+      $$\text{maxV}_{\text{d}_\text{(y)}} = \gamma_{\text{Rd}} \cdot \dfrac{\left[( \text{M}_{\text{Rc,1}}^{+} \cdot \dfrac{\sum \text{M}_{\text{Rb,άνω}}}{\sum \text{M}_{\text{Rc,άνω}}}) + \text{M}_{\text{Rc,2}}^- \right] }{\text{L}_{\text{cl}}}$$
 
       **και**
 
