@@ -38,7 +38,7 @@ if epilogi == "Ικανοτικός σχεδιασμός σε διάτμηση":
             col1,col2 =st.columns(2)
             with col1:
                 st.info('**Δεδομένα δοκού:**')
-                lb = st.number_input('Μήκος δοκού $l_b$:', value=5.5, step=0.1, format="%.2f")
+                lb = st.number_input('Μήκος δοκού $l_{b}$:', value=5.5, step=0.1, format="%.2f")
             with col2:
                 st.info('**Τέμνουσες:**')
                 V0b = st.number_input('Τέμνουσα της δοκού $V_{0,b}$:', value=60.0, step=0.1, format="%.2f")
@@ -130,18 +130,18 @@ if epilogi == "Ικανοτικός σχεδιασμός σε διάτμηση":
     if elegxos == 'Υποστυλώματα':
         with st.expander('**Τα αριθμητικά δεδομένα σας**'):
             st.info("**Δεδομένα υποστυλώματος:**")
-            lc = st.number_input('Μήκος υποστυλώματος $l_c$:', value=6.0, step=0.1, format="%.2f")
+            lc = st.number_input('Μήκος υποστυλώματος $l_{c}$:', value=6.0, step=0.1, format="%.2f")
             st.divider()
             st.info('**Ροπές αντοχής:**')
             col1,col2 =st.columns(2)
             with col1:
                 st.success('**Άνω:**')
-                MRc1_t = st.number_input('**Θετική** ροπή αντοχής: $MRc,1^+$', value= 90.0,  step=0.1, format="%.2f")
-                MRc1_a = st.number_input('**Αρνητική** ροπή αντοχής $MRc,1^-$',value = - 200.0, step=0.1, format="%.2f")
+                MRc1_t = st.number_input('**Θετική** ροπή αντοχής: $M_{Rc,1}^+$', value= 90.0,  step=0.1, format="%.2f")
+                MRc1_a = st.number_input('**Αρνητική** ροπή αντοχής $M_{Rc,1}^-$',value = - 200.0, step=0.1, format="%.2f")
             with col2:
                 st.success("**Κάτω:**")
-                MRc2_t = st.number_input('**Θετική** ροπή αντοχής $MRc,2^+$', value= 120.0,  step=0.1, format="%.2f")
-                MRc2_a = st.number_input('**Αρνητική** ροπή αντοχής $MRc,2^-$',value = - 250.0, step=0.1, format="%.2f")
+                MRc2_t = st.number_input('**Θετική** ροπή αντοχής $M_{Rc,2}^+$', value= 120.0,  step=0.1, format="%.2f")
+                MRc2_a = st.number_input('**Αρνητική** ροπή αντοχής $M_{Rc,2}^-$',value = - 250.0, step=0.1, format="%.2f")
   
         st.divider()
         fora = st.selectbox("Επιλέξτε σεισμική φορά ανάλυσης:", ("Θετική →", "Αρνητική ←"))
@@ -159,7 +159,7 @@ if epilogi == "Ικανοτικός σχεδιασμός σε διάτμηση":
         st.write("")
         st.write("")
         st.markdown(r'''
-        $$\text{V}_{\text{CD,c}} = 1.40 \left(\frac{\text{M}_{\text{Rc,}_{1}} + \text{M}_{\text{Rc,}_{2}}}{\text{l}_{\text{c}}} \right)$$
+        $$\text{V}_{\text{CD,c}} = 1.40 \left(\frac{\text{M}_{\text{Rc,1}} + \text{M}_{\text{Rc,2}}}{\text{l}_{\text{c}}} \right)$$
         ''')
         st.write("")
         if fora == 'Θετική →':
@@ -167,33 +167,34 @@ if epilogi == "Ικανοτικός σχεδιασμός σε διάτμηση":
             col1,col2 =st.columns(2)
             with col1:
                 st.markdown(rf'''
-                ◹ $$\text{{M}}_{{\text{{Rc,}}_{{1}}}}^+ = {MRc1_t}\, \text{{kNm}}$$''')
+                ◹ $$\text{{M}}_{{\text{{Rc,1}}}}^+ = {MRc1_t}\, \text{{kNm}}$$''')
             with col2:
                 st.markdown(rf'''
-                ◹ $$\text{{M}}_{{\text{{Rc,}}_{{2}}}}^- = {MRc2_a}\, \text{{kNm}}$$''')
+                ◹ $$\text{{M}}_{{\text{{Rc,2}}}}^- = {MRc2_a}\, \text{{kNm}}$$''')
        
             VCD_c = Vc(MRc1_t, abs(MRc2_a),lc)
             VCD_c = round(VCD_c,2)
             st.success('**Αρα** η τέμνουσα σχεδιασμού για **θετική** σεισμική φορά θα είναι:')
             st.markdown(rf'''
-            $$\text{{V}}_{{\text{{CD,c}}}} = 1.40 \left(\frac{{\text{{M}}_{{\text{{Rb,}}_{{1}}}}^+ + |\text{{M}}_{{\text{{Rb,}}_{{2}}}}^-|}}{{\text{{l}}_{{\text{{c}}}}}} \right) = {VCD_c}\, \text{{kN}}$$''')
+            $$\text{{V}}_{{\text{{CD,c}}}} = 1.40 \left(\frac{{\text{{M}}_{{\text{{Rb,1}}}}^+ + |\text{{M}}_{{\text{{Rb,2}}}}^-|}}{{\text{{l}}_{{\text{{c}}}}}} \right) = {VCD_c}\, \text{{kN}}$$''')
         else:
             st.write("Όπου για **αρνητική** σεισμική φορά:")
             col1,col2 =st.columns(2)
             with col1:
                 st.markdown(rf'''
-                ◹ $$\text{{M}}_{{\text{{Rc,}}_{{1}}}}^- = {MRc1_a}\, \text{{kNm}}$$''')
+                ◹ $$\text{{M}}_{{\text{{Rc,1}}}}^- = {MRc1_a}\, \text{{kNm}}$$''')
             with col2:
                 st.markdown(rf'''
-                ◹ $$\text{{M}}_{{\text{{Rc,}}_{{2}}}}^+ = {MRc2_t}\, \text{{kNm}}$$''')
+                ◹ $$\text{{M}}_{{\text{{Rc,2}}}}^+ = {MRc2_t}\, \text{{kNm}}$$''')
        
             VCD_c = Vc(abs(MRc1_a), MRc2_t,lc)
             VCD_c = round(VCD_c, 2)
             st.success('**Αρα** η τέμνουσα σχεδιασμού για **αρνητική** σεισμική φορά θα είναι:')
             st.markdown(rf'''
-$$\text{{V}}_{{\text{{CD,c}}}} = 1.40 \left(\frac{{|\text{{M}}_{{\text{{Rb,}}_{{1}}}}^-| + \text{{M}}_{{\text{{Rb,}}_{{2}}}}^+}}{{\text{{l}}_{{\text{{c}}}}}} \right) = {VCD_c}\, \text{{kN}}$$''')
+$$\text{{V}}_{{\text{{CD,c}}}} = 1.40 \left(\frac{{|\text{{M}}_{{\text{{Rb,1}}}}^-| + \text{{M}}_{{\text{{Rb,2}}}}^+}}{{\text{{l}}_{{\text{{c}}}}}} \right) = {VCD_c}\, \text{{kN}}$$''')
   
 
+#komvoi
 elif epilogi == 'Ικανοτικός σχεδιασμός στους κόμβους':
     with st.sidebar:
           st.link_button("ΕΡΓΑΣΙΑ", "https://www.phd.eng.br/wp-content/uploads/2015/02/en.1998.1.2004.pdf#page=92")
