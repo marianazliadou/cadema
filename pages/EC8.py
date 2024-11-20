@@ -1239,6 +1239,7 @@ if epilogi == "Ικανοτικός σχεδιασμός στους κόμβου
                  st.info("**Αριστερά:**")
                  st.markdown(rf"""
         **▧ Θετική** φόρτιση: 
+                             
         $$\text{{M}}_{{\text{{Rb,2}}}}^- = {MRb2_n:.2f}\, \text{{kNm}}$$""")   
         else:
             col1,col2 = st.columns(2)
