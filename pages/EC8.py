@@ -969,12 +969,12 @@ if epilogi == "Ικανοτικός σχεδιασμός σε διάτμηση":
         st.write("")
 
         st.markdown(r"""
-      $$\text{max } \text{V}_{\text{d}_\text{(y)}} =  \dfrac{\gamma_{\text{Rd}} \cdot \left[\text{M}_{\text{Rc,}_{1}}^+ \cdot \min \left(1, \left(\frac{\sum \text{M}_{\text{Rb,άνω}}}{\sum \text{{M}}_{\text{Rc,άνω}}}\right)_1\right) + \text{{M}}_{\text{Rc,}_{2}}^- \cdot \min \left(1, \left(\frac{\sum \text{{M}}_{\text{Rb,κάτω}}}{\sum \text{M}_{\text{Rc,κάτω}}}\right)_2\right)\right]}{\text{L}_{\text{cl}}}$$
+      $$\text{max} \text{V}_{\text{d}_\text{(y)}} =  \dfrac{\gamma_{\text{Rd}} \cdot \left[\text{M}_{\text{Rc,}_{1}}^+ \cdot \min \left(1, \left(\frac{\sum \text{M}_{\text{Rb,άνω}}}{\sum \text{{M}}_{\text{Rc,άνω}}}\right)_1\right) + \text{{M}}_{\text{Rc,}_{2}}^- \cdot \min \left(1, \left(\frac{\sum \text{{M}}_{\text{Rb,κάτω}}}{\sum \text{M}_{\text{Rc,κάτω}}}\right)_2\right)\right]}{\text{L}_{\text{cl}}}$$
 
         """)
         st.write("")
         st.markdown(r"""
-      $$\text{min } \text{V}_{\text{d}_\text{(y)}} =  \dfrac{\gamma_{\text{Rd}} \cdot \left[\text{M}_{\text{Rc,}_{1}}^- \cdot \min \left(1, \left(\frac{\sum \text{M}_{\text{Rb,άνω}}}{\sum \text{{M}}_{\text{Rc,άνω}}}\right)_1\right) + \text{{M}}_{\text{Rc,}_{2}}^+ \cdot \min \left(1, \left(\frac{\sum \text{{M}}_{\text{Rb,κάτω}}}{\sum \text{M}_{\text{Rc,κάτω}}}\right)_2\right)\right]}{\text{L}_{\text{cl}}}$$""")
+      $$\text{min} \text{V}_{\text{d}_\text{(y)}} =  \dfrac{\gamma_{\text{Rd}} \cdot \left[\text{M}_{\text{Rc,}_{1}}^- \cdot \min \left(1, \left(\frac{\sum \text{M}_{\text{Rb,άνω}}}{\sum \text{{M}}_{\text{Rc,άνω}}}\right)_1\right) + \text{{M}}_{\text{Rc,}_{2}}^+ \cdot \min \left(1, \left(\frac{\sum \text{{M}}_{\text{Rb,κάτω}}}{\sum \text{M}_{\text{Rc,κάτω}}}\right)_2\right)\right]}{\text{L}_{\text{cl}}}$$""")
 
         st.markdown(
             """ <style>.dashed-line {
