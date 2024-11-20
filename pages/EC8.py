@@ -1780,14 +1780,14 @@ if epilogi == "Ικανοτικός σχεδιασμός στους κόμβου
 
             if SMRc >= 1.3 * SMRb:
                 st.markdown(
-                rf""" **Άρα:** $$\sum \text{{M}}_{{\text{{Rc}}}} \geq 1.3 \sum \text{{M}}_{{\text{{Rb}}}} → {SMRc:.2f}\, \text{{kNm}} \geq {1.3 * SMRb:.2f}\, \text{{kNm}}$$"""
+                rf""" **Άρα:** $$\sum \text{{M}}_{{\text{{Rc}}}} \geq 1.3 \cdot \sum \text{{M}}_{{\text{{Rb}}}} → {SMRc:.2f}\, \text{{kNm}} \geq {1.3 * SMRb:.2f}\, \text{{kNm}}$$"""
             )
                 st.success(
                 "Η ανισότητα **ικανοποιείται**!", icon="🥳"
             )
             else:
                 st.markdown(
-                rf""" **Άρα:** $$\sum \text{{M}}_{{\text{{Rc}}}} < 1.3 \sum \text{{M}}_{{\text{{Rb}}}} → {SMRc:.2f}\, \text{{kNm}} < {1.3 * SMRb:.2f}\, \text{{kNm}}$$"""
+                rf""" **Άρα:** $$\sum \text{{M}}_{{\text{{Rc}}}} < 1.3 \cdot \sum \text{{M}}_{{\text{{Rb}}}} → {SMRc:.2f}\, \text{{kNm}} < {1.3 * SMRb:.2f}\, \text{{kNm}}$$"""
             )
                 st.error(
                 "Η ανισότητα **δεν ικανοποιείται**.",
@@ -1809,14 +1809,14 @@ if epilogi == "Ικανοτικός σχεδιασμός στους κόμβου
 
             if SMRc >= 1.3 * SMRb:
                 st.markdown(
-                rf""" **Άρα:** $$\sum \text{{M}}_{{\text{{Rc}}}} \geq 1.3 \sum \text{{M}}_{{\text{{Rb}}}} → {SMRc:.2f}\, \text{{kNm}} \geq {1.3 * SMRb:.2f}\, \text{{kNm}}$$"""
+                rf""" **Άρα:** $$\sum \text{{M}}_{{\text{{Rc}}}} \geq 1.3 \cdot \sum \text{{M}}_{{\text{{Rb}}}} → {SMRc:.2f}\, \text{{kNm}} \geq {1.3 * SMRb:.2f}\, \text{{kNm}}$$"""
             )
                 st.success(
                 "Η ανισότητα **ικανοποιείται**!", icon="🥳"
             )
             else:
                 st.markdown(
-                rf""" **Άρα:** $$\sum \text{{M}}_{{\text{{Rc}}}} < 1.3 \sum \text{{M}}_{{\text{{Rb}}}} → {SMRc:.2f}\, \text{{kNm}} < {1.3 * SMRb:.2f}\, \text{{kNm}}$$"""
+                rf""" **Άρα:** $$\sum \text{{M}}_{{\text{{Rc}}}} < 1.3 \cdot \sum \text{{M}}_{{\text{{Rb}}}} → {SMRc:.2f}\, \text{{kNm}} < {1.3 * SMRb:.2f}\, \text{{kNm}}$$"""
             )
                 st.error(
                 "Η ανισότητα **δεν ικανοποιείται**.",
@@ -1838,14 +1838,14 @@ if epilogi == "Ικανοτικός σχεδιασμός στους κόμβου
 
             if SMRc >= 1.3 * SMRb:
                 st.markdown(
-                rf""" **Άρα:** $$\sum \text{{M}}_{{\text{{Rc}}}} \geq 1.3 \sum \text{{M}}_{{\text{{Rb}}}} → {SMRc:.2f}\, \text{{kNm}} \geq {1.3 * SMRb:.2f}\, \text{{kNm}}$$"""
+                rf""" **Άρα:** $$\sum \text{{M}}_{{\text{{Rc}}}} \geq 1.3 \cdot \sum \text{{M}}_{{\text{{Rb}}}} → {SMRc:.2f}\, \text{{kNm}} \geq {1.3 * SMRb:.2f}\, \text{{kNm}}$$"""
             )
                 st.success(
                 "Η ανισότητα **ικανοποιείται**!", icon="🥳"
             )
             else:
                 st.markdown(
-                rf""" **Άρα:** $$\sum \text{{M}}_{{\text{{Rc}}}} < 1.3 \sum \text{{M}}_{{\text{{Rb}}}} → {SMRc:.2f}\, \text{{kNm}} < {1.3 * SMRb:.2f}\, \text{{kNm}}$$"""
+                rf""" **Άρα:** $$\sum \text{{M}}_{{\text{{Rc}}}} < 1.3 \sum \cdot \text{{M}}_{{\text{{Rb}}}} → {SMRc:.2f}\, \text{{kNm}} < {1.3 * SMRb:.2f}\, \text{{kNm}}$$"""
             )
                 st.error(
                 "Η ανισότητα **δεν ικανοποιείται**.",
@@ -1867,14 +1867,14 @@ if epilogi == "Ικανοτικός σχεδιασμός στους κόμβου
 
             if SMRc >= 1.3 * SMRb:
                 st.markdown(
-                rf""" **Άρα:** $$\sum \text{{M}}_{{\text{{Rc}}}} \geq 1.3 \sum \text{{M}}_{{\text{{Rb}}}} → {SMRc:.2f}\, \text{{kNm}} \geq {1.3 * SMRb:.2f}\, \text{{kNm}}$$"""
+                rf""" **Άρα:** $$\sum \text{{M}}_{{\text{{Rc}}}} \geq 1.3 \cdot \sum \text{{M}}_{{\text{{Rb}}}} → {SMRc:.2f}\, \text{{kNm}} \geq {1.3 * SMRb:.2f}\, \text{{kNm}}$$"""
             )
                 st.success(
                 "Η ανισότητα **ικανοποιείται**!", icon="🥳"
             )
             else:
                 st.markdown(
-                rf""" **Άρα:** $$\sum \text{{M}}_{{\text{{Rc}}}} < 1.3 \sum \text{{M}}_{{\text{{Rb}}}} → {SMRc:.2f}\, \text{{kNm}} < {1.3 * SMRb:.2f}\, \text{{kNm}}$$"""
+                rf""" **Άρα:** $$\sum \text{{M}}_{{\text{{Rc}}}} < 1.3 \cdot \sum \text{{M}}_{{\text{{Rb}}}} → {SMRc:.2f}\, \text{{kNm}} < {1.3 * SMRb:.2f}\, \text{{kNm}}$$"""
             )
                 st.error(
                 "Η ανισότητα **δεν ικανοποιείται**.",
@@ -1896,14 +1896,14 @@ if epilogi == "Ικανοτικός σχεδιασμός στους κόμβου
 
             if SMRc >= 1.3 * SMRb:
                 st.markdown(
-                rf""" **Άρα:** $$\sum \text{{M}}_{{\text{{Rc}}}} \geq 1.3 \sum \text{{M}}_{{\text{{Rb}}}} → {SMRc:.2f}\, \text{{kNm}} \geq {1.3 * SMRb:.2f}\, \text{{kNm}}$$"""
+                rf""" **Άρα:** $$\sum \text{{M}}_{{\text{{Rc}}}} \geq 1.3 \cdot \sum \text{{M}}_{{\text{{Rb}}}} → {SMRc:.2f}\, \text{{kNm}} \geq {1.3 * SMRb:.2f}\, \text{{kNm}}$$"""
             )
                 st.success(
                 "Η ανισότητα **ικανοποιείται**!", icon="🥳"
             )
             else:
                 st.markdown(
-                rf""" **Άρα:** $$\sum \text{{M}}_{{\text{{Rc}}}} < 1.3 \sum \text{{M}}_{{\text{{Rb}}}} → {SMRc:.2f}\, \text{{kNm}} < {1.3 * SMRb:.2f}\, \text{{kNm}}$$"""
+                rf""" **Άρα:** $$\sum \text{{M}}_{{\text{{Rc}}}} < 1.3 \cdot \sum \text{{M}}_{{\text{{Rb}}}} → {SMRc:.2f}\, \text{{kNm}} < {1.3 * SMRb:.2f}\, \text{{kNm}}$$"""
             )
                 st.error(
                 "Η ανισότητα **δεν ικανοποιείται**.",
@@ -1925,14 +1925,14 @@ if epilogi == "Ικανοτικός σχεδιασμός στους κόμβου
 
             if SMRc >= 1.3 * SMRb:
                 st.markdown(
-                rf""" **Άρα:** $$\sum \text{{M}}_{{\text{{Rc}}}} \geq 1.3 \sum \text{{M}}_{{\text{{Rb}}}} → {SMRc:.2f}\, \text{{kNm}} \geq {1.3 * SMRb:.2f}\, \text{{kNm}}$$"""
+                rf""" **Άρα:** $$\sum \text{{M}}_{{\text{{Rc}}}} \geq 1.3 \cdot \sum \text{{M}}_{{\text{{Rb}}}} → {SMRc:.2f}\, \text{{kNm}} \geq {1.3 * SMRb:.2f}\, \text{{kNm}}$$"""
             )
                 st.success(
                 "Η ανισότητα **ικανοποιείται**!", icon="🥳"
             )
             else:
                 st.markdown(
-                rf""" **Άρα:** $$\sum \text{{M}}_{{\text{{Rc}}}} < 1.3 \sum \text{{M}}_{{\text{{Rb}}}} → {SMRc:.2f}\, \text{{kNm}} < {1.3 * SMRb:.2f}\, \text{{kNm}}$$"""
+                rf""" **Άρα:** $$\sum \text{{M}}_{{\text{{Rc}}}} < 1.3 \cdot \sum \text{{M}}_{{\text{{Rb}}}} → {SMRc:.2f}\, \text{{kNm}} < {1.3 * SMRb:.2f}\, \text{{kNm}}$$"""
             )
                 st.error(
                 "Η ανισότητα **δεν ικανοποιείται**.",
@@ -1954,14 +1954,14 @@ if epilogi == "Ικανοτικός σχεδιασμός στους κόμβου
 
             if SMRc >= 1.3 * SMRb:
                 st.markdown(
-                rf""" **Άρα:** $$\sum \text{{M}}_{{\text{{Rc}}}} \geq 1.3 \sum \text{{M}}_{{\text{{Rb}}}} → {SMRc:.2f}\, \text{{kNm}} \geq {1.3 * SMRb:.2f}\, \text{{kNm}}$$"""
+                rf""" **Άρα:** $$\sum \text{{M}}_{{\text{{Rc}}}} \geq 1.3 \cdot \sum \text{{M}}_{{\text{{Rb}}}} → {SMRc:.2f}\, \text{{kNm}} \geq {1.3 * SMRb:.2f}\, \text{{kNm}}$$"""
             )
                 st.success(
                 "Η ανισότητα **ικανοποιείται**!", icon="🥳"
             )
             else:
                 st.markdown(
-                rf""" **Άρα:** $$\sum \text{{M}}_{{\text{{Rc}}}} < 1.3 \sum \text{{M}}_{{\text{{Rb}}}} → {SMRc:.2f}\, \text{{kNm}} < {1.3 * SMRb:.2f}\, \text{{kNm}}$$"""
+                rf""" **Άρα:** $$\sum \text{{M}}_{{\text{{Rc}}}} < 1.3 \cdot \sum \text{{M}}_{{\text{{Rb}}}} → {SMRc:.2f}\, \text{{kNm}} < {1.3 * SMRb:.2f}\, \text{{kNm}}$$"""
             )
                 st.error(
                 "Η ανισότητα **δεν ικανοποιείται**.",
@@ -1983,14 +1983,14 @@ if epilogi == "Ικανοτικός σχεδιασμός στους κόμβου
 
             if SMRc >= 1.3 * SMRb:
                 st.markdown(
-                rf""" **Άρα:** $$\sum \text{{M}}_{{\text{{Rc}}}} \geq 1.3 \sum \text{{M}}_{{\text{{Rb}}}} → {SMRc:.2f}\, \text{{kNm}} \geq {1.3 * SMRb:.2f}\, \text{{kNm}}$$"""
+                rf""" **Άρα:** $$\sum \text{{M}}_{{\text{{Rc}}}} \geq 1.3 \cdot \sum \text{{M}}_{{\text{{Rb}}}} → {SMRc:.2f}\, \text{{kNm}} \geq {1.3 * SMRb:.2f}\, \text{{kNm}}$$"""
             )
                 st.success(
                 "Η ανισότητα **ικανοποιείται**!", icon="🥳"
             )
             else:
                 st.markdown(
-                rf""" **Άρα:** $$\sum \text{{M}}_{{\text{{Rc}}}} < 1.3 \sum \text{{M}}_{{\text{{Rb}}}} → {SMRc:.2f}\, \text{{kNm}} < {1.3 * SMRb:.2f}\, \text{{kNm}}$$"""
+                rf""" **Άρα:** $$\sum \text{{M}}_{{\text{{Rc}}}} < 1.3 \cdot \sum \text{{M}}_{{\text{{Rb}}}} → {SMRc:.2f}\, \text{{kNm}} < {1.3 * SMRb:.2f}\, \text{{kNm}}$$"""
             )
                 st.error(
                 "Η ανισότητα **δεν ικανοποιείται**.",
