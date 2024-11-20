@@ -103,10 +103,10 @@ if epilogi == "Ικανοτικός σχεδιασμός σε διάτμηση":
                 if ar_dokos:
                     st.error("**Ροπές αντοχής αριστερής δοκού:**")
                     MRb1l_a = st.number_input(
-                        "**Αρνητική** ροπή αντοχής $M_{Rb,1left^-}$:", value=-100.0, step=0.1, format="%.2f"
+                        "**Αρνητική** ροπή αντοχής $M_{Rb,1 left}^-$:", value=-100.0, step=0.1, format="%.2f"
                     )
                     MRb1l_t = st.number_input(
-                        "**Θετική** ροπή αντοχής $MRb,1_{left}^+$:", value=50.0, step=0.1, format="%.2f"
+                        "**Θετική** ροπή αντοχής $M_{Rb,1 left}^+$:", value=50.0, step=0.1, format="%.2f"
                     )
                 else:
                     st.write("")
