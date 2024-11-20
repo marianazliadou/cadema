@@ -504,7 +504,7 @@ if epilogi == "Ικανοτικός σχεδιασμός σε διάτμηση":
 
         **και**
 
-        $$\text{min} \text{V}_{\text{d}_\text{(x)}} =  \gamma_{\text{Rd}} \times \frac{(\text{\text{M}_{\text{Rb,1}}^{+} + \text{\text{M}}_{\text{Rb,2}}^{-})}{\text{L}_{\text{cl}}} + \text{V}_{\text{G}+{\text{ψ}_2}{\text{Q}_o}_\text{(x)}}$$
+        $$\text{min} \text{V}_{\text{d}_\text{(x)}} =  \gamma_{\text{Rd}} \times \frac{(\text{\text{M}}_{\text{Rb,1}}^{+} + \text{\text{M}}_{\text{Rb,2}}^{-})}{\text{L}_{\text{cl}}} + \text{V}_{\text{G}+{\text{ψ}_2}{\text{Q}_o}_\text{(x)}}$$
 
         **Άρα:**       
       """)
