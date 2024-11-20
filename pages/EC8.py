@@ -405,12 +405,12 @@ if epilogi == "Ικανοτικός σχεδιασμός σε διάτμηση":
         st.write("")
         st.write("")
         st.markdown(r"""
-    $$\text{max} \text{V}_{\text{d}_\text{(x)}} = \frac{\gamma_{\text{Rd}} \times \left[\text{M}_{\text{Rb,1}}^- \times \min \left(1, \left(\frac{\sum \text{M}_{\text{Rc,}{\text{αρ}}}}{\sum \text{M}_{\text{Rb,}{\text{αρ}}}}\right)_1\right) + \text{M}_{\text{Rb,}_{2}}^+ \times \min \left(1, \left(\frac{\sum \text{M}_{\text{Rc,}{\text{δεξ}}}}{\sum \text{M}_{\text{Rb,}{\text{δεξ}}}}\right)_2\right) \right]}{\text{L}_{\text{cl}}} + \text{V}_{{\text{G}+{\text{ψ}_2}{\text{Q}_o}}_\text{(x)}}$$
+    $$\text{max} \text{V}_{\text{d}_\text{(x)}} = \frac{\gamma_{\text{Rd}} \times \left[\text{M}_{\text{Rb,1}}^- \times \min \left(1, \left(\frac{\sum \text{M}_{\text{Rc,}{\text{αρ}}}}{\sum \text{M}_{\text{Rb,}{\text{αρ}}}}\right)_1\right) + \text{M}_{\text{Rb,2}}^+ \times \min \left(1, \left(\frac{\sum \text{M}_{\text{Rc,}{\text{δεξ}}}}{\sum \text{M}_{\text{Rb,}{\text{δεξ}}}}\right)_2\right) \right]}{\text{L}_{\text{cl}}} + \text{V}_{{\text{G}+{\text{ψ}_2}{\text{Q}_o}}_\text{(x)}}$$
       """)
 
         st.write("")
         st.markdown(r"""
-   $$\text{min} \text{V}_{\text{d}_\text{(x)}} = - \frac{\gamma_{\text{Rd}} \times \left[\text{M}_{\text{Rb,}_{1}}^+ \times \min \left(1, \left(\frac{\sum \text{M}_{\text{Rc,}{\text{αρ}}}}{\sum \text{M}_{\text{Rb,}{\text{αρ}}}}\right)_1\right) + \text{M}_{\text{Rb,}_{2}}^- \times \min \left(1, \left(\frac{\sum \text{M}_{\text{Rc,}{\text{δεξ}}}}{\sum \text{M}_{\text{Rb,}{\text{δεξ}}}}\right)_2\right)\right]}{\text{L}_{\text{cl}}} + \text{V}_{{\text{G}+{\text{ψ}_2}{\text{Q}_o}}_\text{(x)}}$$
+   $$\text{min} \text{V}_{\text{d}_\text{(x)}} = - \frac{\gamma_{\text{Rd}} \times \left[\text{M}_{\text{Rb,1}}^+ \times \min \left(1, \left(\frac{\sum \text{M}_{\text{Rc,}{\text{αρ}}}}{\sum \text{M}_{\text{Rb,}{\text{αρ}}}}\right)_1\right) + \text{M}_{\text{Rb,2}}^- \times \min \left(1, \left(\frac{\sum \text{M}_{\text{Rc,}{\text{δεξ}}}}{\sum \text{M}_{\text{Rb,}{\text{δεξ}}}}\right)_2\right)\right]}{\text{L}_{\text{cl}}} + \text{V}_{{\text{G}+{\text{ψ}_2}{\text{Q}_o}}_\text{(x)}}$$
   """)
         st.markdown(
             """ <style>.dashed-line {
