@@ -586,7 +586,7 @@ if epilogi == "Ικανοτικός σχεδιασμός σε διάτμηση":
             VEdde2 = round(VEdde2, 2)
             st.markdown(rf"""
       **⁛** Για το **αριστερό άκρο οι τέμνουσες σχεδιασμού** θα είναι:
-      $$\text{{V}}_{{\text{{Ed,αρ}}}} = - \text{{V}}_{{\text{{0,i}}}} - \Delta \text{{V}}_{{\text{{Ed,i}}}} = {VEdar2}\, \text{{kN}}$$ και για το **δεξιό άκρο** θα είναι: $$\text{{V}}_{{\text{{Ed,δεξ}}}} = - \text{{V}}_{{\text{{0,i}}}} - \Delta \text{{V}}_{{\text{{Ed,i}}}} = {VEdde2}\, \text{{kN}}$$
+      $$\text{{V}}_{{\text{{Ed,αρ}}}} = \text{{V}}_{{\text{{0,i}}}} - \Delta \text{{V}}_{{\text{{Ed,i}}}} = {VEdar2}\, \text{{kN}}$$ και για το **δεξιό άκρο** θα είναι: $$\text{{V}}_{{\text{{Ed,δεξ}}}} = - \text{{V}}_{{\text{{0,i}}}} - \Delta \text{{V}}_{{\text{{Ed,i}}}} = {VEdde2}\, \text{{kN}}$$
       """)
 
         elif SMRb_ar <= SMRc_ar and SMRb_de > SMRc_de and fora == 'Θετική':
